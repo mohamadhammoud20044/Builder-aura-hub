@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X, Bot, Sparkles, Globe, Zap } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const Header = () => {
@@ -127,6 +128,7 @@ const Header = () => {
 
         {/* CTA Button */}
         <div className="hidden lg:flex items-center space-x-4">
+          <ThemeToggle />
           <Button variant="outline" size="sm">
             Sign In
           </Button>
@@ -202,6 +204,10 @@ const Header = () => {
                 </div>
 
                 <div className="space-y-2 pt-4 border-t">
+                  <div className="flex items-center justify-between p-2">
+                    <span className="text-sm font-medium">Theme</span>
+                    <ThemeToggle />
+                  </div>
                   <Button variant="outline" className="w-full">
                     Sign In
                   </Button>
