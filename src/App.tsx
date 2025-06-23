@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import ConversationalAI from "./pages/ConversationalAI";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,8 +26,11 @@ const App = () => (
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/contact" element={<Contact />} />
 
-            {/* Service Pages (Placeholders for now) */}
-            <Route path="/services/conversational-ai" element={<NotFound />} />
+            {/* Service Pages */}
+            <Route
+              path="/services/conversational-ai"
+              element={<ConversationalAI />}
+            />
             <Route path="/services/website-builder" element={<NotFound />} />
             <Route path="/services/custom-ai" element={<NotFound />} />
             <Route path="/services/automation" element={<NotFound />} />
