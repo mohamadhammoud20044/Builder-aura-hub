@@ -10,7 +10,9 @@ const ConversationalAI = () => {
     {
       name: "Starter",
       price: "$100",
+      originalPrice: "$199",
       period: "per month",
+      savings: "Save $99",
       description: "Perfect for small businesses getting started",
       features: [
         "100 minutes of high-quality Text to Speech with Multilingual v2",
@@ -20,11 +22,14 @@ const ConversationalAI = () => {
       buttonText: "Get Started",
       popular: false,
       gradient: "from-blue-500 to-blue-600",
+      discount: "50% OFF",
     },
     {
       name: "Professional",
       price: "$200",
+      originalPrice: "$399",
       period: "per month",
+      savings: "Save $199",
       description: "Ideal for growing businesses with higher demands",
       features: [
         "500 minutes of high-quality Text to Speech with Multilingual v2",
@@ -34,11 +39,14 @@ const ConversationalAI = () => {
       buttonText: "Most Popular",
       popular: true,
       gradient: "from-blue-600 to-cyan-600",
+      discount: "50% OFF",
     },
     {
       name: "Enterprise",
       price: "$1,000",
+      originalPrice: "$1,799",
       period: "per month",
+      savings: "Save $799",
       description: "For large organizations with extensive AI needs",
       features: [
         "2,000 minutes of high-quality Text to Speech with Multilingual v2",
@@ -48,6 +56,7 @@ const ConversationalAI = () => {
       buttonText: "Contact Sales",
       popular: false,
       gradient: "from-cyan-600 to-blue-700",
+      discount: "44% OFF",
     },
   ];
 
@@ -120,10 +129,20 @@ const ConversationalAI = () => {
                   consistent, high-quality service that scales with your
                   business.
                 </p>
-                <p className="text-xl font-semibold text-primary">
+                <p className="text-xl font-semibold text-primary mb-4">
                   🚀 Join 500+ businesses already saving $10,000+ monthly on
                   customer service costs while increasing satisfaction by 85%!
                 </p>
+                <div className="bg-red-50 dark:bg-red-950/30 border-l-4 border-red-500 p-4 rounded-r-lg">
+                  <p className="text-lg font-bold text-red-700 dark:text-red-300">
+                    ⏰ URGENT: Our biggest discount of the year expires in 24
+                    hours!
+                  </p>
+                  <p className="text-red-600 dark:text-red-400 mt-2">
+                    Don't miss out on saving up to $9,588 annually. This 50%
+                    discount won't be available again until 2025!
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -157,8 +176,8 @@ const ConversationalAI = () => {
                 Start small or go big – our flexible plans grow with your
                 business. Every plan includes our cutting-edge technology stack.
               </p>
-              <div className="inline-flex items-center bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-4 py-2 rounded-full text-sm font-semibold">
-                ⚡ Limited Time: 30% off first 3 months for new customers!
+              <div className="inline-flex items-center bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-6 py-3 rounded-full text-lg font-bold animate-pulse border-2 border-red-200 dark:border-red-800">
+                🔥 FLASH SALE: Up to 50% OFF - Ends in 24 Hours!
               </div>
             </div>
 
@@ -184,12 +203,32 @@ const ConversationalAI = () => {
                     className={`h-2 bg-gradient-to-r ${plan.gradient}`}
                   ></div>
                   <CardHeader className="text-center pb-8">
-                    <CardTitle className="text-2xl mb-4">{plan.name}</CardTitle>
-                    <div className="mb-4">
-                      <span className="text-4xl font-bold">{plan.price}</span>
-                      <span className="text-gray-600 dark:text-gray-400 ml-2">
+                    <div className="flex justify-between items-start mb-4">
+                      <CardTitle className="text-2xl">{plan.name}</CardTitle>
+                      <Badge className="bg-red-500 text-white text-xs font-bold px-2 py-1">
+                        {plan.discount}
+                      </Badge>
+                    </div>
+                    <div className="mb-2">
+                      <div className="flex items-center justify-center gap-2 mb-1">
+                        <span className="text-2xl text-gray-400 dark:text-gray-500 line-through">
+                          {plan.originalPrice}
+                        </span>
+                        <span className="text-4xl font-bold text-green-600 dark:text-green-400">
+                          {plan.price}
+                        </span>
+                      </div>
+                      <span className="text-gray-600 dark:text-gray-400 text-sm">
                         {plan.period}
                       </span>
+                    </div>
+                    <div className="mb-4">
+                      <Badge
+                        variant="secondary"
+                        className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 font-semibold"
+                      >
+                        🎉 {plan.savings}/month
+                      </Badge>
                     </div>
                     <p className="text-gray-600 dark:text-gray-400">
                       {plan.description}
