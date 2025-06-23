@@ -180,7 +180,7 @@ const Index = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-fadeInUp">
               Transform Your Business with AI
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp">
               Unlock the power of artificial intelligence with our comprehensive
               suite of services. From conversational AI to custom automation, we
               help businesses thrive in the digital age.
@@ -206,7 +206,9 @@ const Index = () => {
                   <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-gray-600 text-sm">{stat.label}</div>
+                  <div className="text-gray-600 dark:text-gray-400 text-sm">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -221,7 +223,7 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Our AI <span className="gradient-text">Services</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Choose from our comprehensive range of AI solutions designed to
               meet every business need
             </p>
@@ -281,7 +283,7 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Why Choose <span className="gradient-text">AI Services</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               We deliver measurable results that transform your business
               operations and drive growth
             </p>
@@ -294,7 +296,9 @@ const Index = () => {
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {benefit.description}
+                </p>
               </div>
             ))}
           </div>
@@ -308,7 +312,7 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               How It <span className="gradient-text">Works</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Get started with AI in three simple steps
             </p>
           </div>
@@ -344,7 +348,9 @@ const Index = () => {
                   </div>
                   <step.icon className="w-8 h-8 mx-auto mb-4 text-primary" />
                   <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {step.description}
+                  </p>
                   {index < 2 && (
                     <div className="hidden md:block absolute top-10 left-full w-full">
                       <ArrowRight className="w-6 h-6 text-gray-300 mx-auto" />
