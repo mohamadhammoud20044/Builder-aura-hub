@@ -174,13 +174,13 @@ const Index = () => {
 
         <div className="relative container mx-auto px-4 py-20 text-center">
           <div className="max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-gradient-ai border-0 text-white px-4 py-2">
+            <Badge className="mb-6 bg-gradient-ai border-0 text-white px-4 py-2 animate-fadeInUp">
               🚀 Leading AI Innovation
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-fadeInUp">
               Transform Your Business with AI
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp">
               Unlock the power of artificial intelligence with our comprehensive
               suite of services. From conversational AI to custom automation, we
               help businesses thrive in the digital age.
