@@ -56,7 +56,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-950">
       <Header />
 
       <div className="pt-20">
@@ -74,7 +74,7 @@ const Pricing = () => {
         </section>
 
         {/* Pricing Cards */}
-        <section className="py-20">
+        <section className="py-20 bg-white dark:bg-gray-950">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {plans.map((plan, index) => (

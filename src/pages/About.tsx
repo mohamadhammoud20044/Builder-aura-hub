@@ -5,7 +5,7 @@ import { Users, Target, Award, Lightbulb } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-950">
       <Header />
 
       <div className="pt-20">
@@ -24,7 +24,7 @@ const About = () => {
         </section>
 
         {/* Placeholder Content */}
-        <section className="py-20">
+        <section className="py-20 bg-white dark:bg-gray-950">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[

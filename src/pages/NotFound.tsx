@@ -6,7 +6,7 @@ import { Home, ArrowLeft, Bot } from "lucide-react";
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white dark:bg-gray-950 flex flex-col">
       <Header />
 
       <div className="flex-1 flex items-center justify-center pt-20">
