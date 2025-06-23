@@ -41,7 +41,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-ai rounded-lg flex items-center justify-center">
                 <Bot className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">AI Services</span>
+              <span className="text-xl font-bold">COFTECH</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               Empowering businesses with cutting-edge AI solutions. From
@@ -147,7 +147,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} AI Services. All rights reserved.
+            © {currentYear} COFTECH. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
             Built with ❤️ for the future of business

@@ -69,7 +69,7 @@ const Header = () => {
           <div className="w-8 h-8 bg-gradient-ai rounded-lg flex items-center justify-center">
             <Bot className="w-5 h-5 text-white" />
           </div>
-          <span className="text-xl font-bold gradient-text">AI Services</span>
+          <span className="text-xl font-bold gradient-text">COFTECH</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -152,7 +152,7 @@ const Header = () => {
                     <Bot className="w-5 h-5 text-white" />
                   </div>
                   <span className="text-xl font-bold gradient-text">
-                    AI Services
+                    COFTECH
                   </span>
                 </Link>
               </div>

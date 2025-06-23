@@ -128,7 +128,7 @@ const Index = () => {
       company: "TechStart Inc.",
       role: "CEO",
       content:
-        "AI Services transformed our customer support. Our response time improved by 70% and customer satisfaction is at an all-time high.",
+        "COFTECH transformed our customer support. Our response time improved by 70% and customer satisfaction is at an all-time high.",
       rating: 5,
     },
     {
@@ -281,7 +281,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Choose <span className="gradient-text">AI Services</span>
+              Why Choose <span className="gradient-text">COFTECH</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               We deliver measurable results that transform your business

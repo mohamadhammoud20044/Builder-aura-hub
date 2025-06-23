@@ -13,7 +13,7 @@ const About = () => {
         <section className="py-20 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
-              About AI Services
+              About COFTECH
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're on a mission to democratize AI and make it accessible to
