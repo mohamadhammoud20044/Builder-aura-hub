@@ -17,18 +17,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    /* AI-themed primary colors - Deep tech blue */
+    /* AI-themed primary colors - Deep blue */
     --primary: 221 83% 53%;
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary - Tech purple accent */
-    --secondary: 270 95% 75%;
+    /* Secondary - Light blue accent */
+    --secondary: 213 94% 68%;
     --secondary-foreground: 240 10% 3.9%;
 
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
 
-    --accent: 270 95% 75%;
+    --accent: 213 94% 68%;
     --accent-foreground: 240 10% 3.9%;
 
     --destructive: 0 84.2% 60.2%;
@@ -40,10 +40,10 @@
 
     --radius: 0.75rem;
 
-    /* AI gradient colors */
+    /* Blue gradient colors - from dark blue to light blue to cyan */
     --gradient-start: 221 83% 53%;
-    --gradient-middle: 270 95% 75%;
-    --gradient-end: 314 100% 86%;
+    --gradient-middle: 213 94% 68%;
+    --gradient-end: 199 89% 48%;
 
     /* Glass effect */
     --glass-bg: 0 0% 100% / 0.1;
@@ -72,13 +72,13 @@
     --primary: 221 83% 53%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 270 95% 75%;
+    --secondary: 213 94% 68%;
     --secondary-foreground: 240 10% 3.9%;
 
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --accent: 270 95% 75%;
+    --accent: 213 94% 68%;
     --accent-foreground: 240 10% 3.9%;
 
     --destructive: 0 62.8% 30.6%;
@@ -123,7 +123,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 via-purple-500 to-pink-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent;
   }
 
   .gradient-bg {
