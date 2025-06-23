@@ -62,11 +62,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // AI-specific colors
+        // AI-specific colors - Blue shades
         ai: {
-          blue: "hsl(221 83% 53%)",
-          purple: "hsl(270 95% 75%)",
-          pink: "hsl(314 100% 86%)",
+          "dark-blue": "hsl(221 83% 53%)",
+          "medium-blue": "hsl(213 94% 68%)",
+          "light-blue": "hsl(199 89% 48%)",
         },
       },
       borderRadius: {
@@ -126,7 +126,7 @@ export default {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-ai":
-          "linear-gradient(135deg, hsl(221 83% 53%), hsl(270 95% 75%), hsl(314 100% 86%))",
+          "linear-gradient(135deg, hsl(221 83% 53%), hsl(213 94% 68%), hsl(199 89% 48%))",
       },
     },
   },
