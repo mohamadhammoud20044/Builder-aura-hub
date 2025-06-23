@@ -115,6 +115,49 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Smooth theme transitions */
+  * {
+    transition:
+      background-color 0.4s ease-in-out,
+      color 0.4s ease-in-out,
+      border-color 0.4s ease-in-out,
+      box-shadow 0.4s ease-in-out;
+  }
+
+  /* Ensure smooth transitions for all elements during theme changes */
+  html,
+  body,
+  div,
+  section,
+  header,
+  footer,
+  nav,
+  article,
+  aside,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  button {
+    transition:
+      background-color 0.4s ease-in-out,
+      color 0.4s ease-in-out,
+      border-color 0.4s ease-in-out,
+      opacity 0.4s ease-in-out;
+  }
+
+  /* Special handling for gradient backgrounds */
+  [class*="gradient"],
+  .bg-gradient-to-br,
+  .bg-gradient-to-r {
+    transition: opacity 0.4s ease-in-out;
+  }
 }
 
 @layer components {
