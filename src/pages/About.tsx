@@ -10,7 +10,7 @@ const About = () => {
 
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+        <section className="py-20 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
               About AI Services
