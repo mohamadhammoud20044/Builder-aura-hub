@@ -64,11 +64,11 @@ const Pricing = () => {
         <section className="py-20 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
-              Simple, Transparent Pricing
+              AI Services Pricing
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the perfect plan for your business. All plans include our
-              core AI services with no hidden fees or long-term contracts.
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Choose the perfect AI plan for your business. All plans include
+              our core AI services with no hidden fees or long-term contracts.
             </p>
           </div>
         </section>
@@ -118,14 +118,14 @@ const Pricing = () => {
 
             <div className="text-center mt-16">
               <h2 className="text-3xl font-bold mb-6">
-                Need a custom solution?
+                Need a custom AI solution?
               </h2>
-              <p className="text-gray-600 mb-8">
-                Contact our sales team for enterprise pricing and custom AI
-                development.
+              <p className="text-gray-600 dark:text-gray-400 mb-8">
+                Contact our AI specialists for enterprise pricing and custom AI
+                development tailored to your specific needs.
               </p>
               <Button size="lg" className="bg-gradient-ai border-0">
-                Schedule a Demo
+                Schedule AI Demo
               </Button>
             </div>
           </div>
