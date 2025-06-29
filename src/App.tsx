@@ -6,9 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Index from "./pages/Index";
 import AIServices from "./pages/AIServices";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Team from "./pages/Team";
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
-import Contact from "./pages/Contact";
 import ConversationalAI from "./pages/ConversationalAI";
 import NotFound from "./pages/NotFound";
 
@@ -23,6 +25,9 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/team" element={<Team />} />
             <Route path="/ai-services" element={<AIServices />} />
             <Route path="/ai-services/about" element={<About />} />
             <Route path="/ai-services/pricing" element={<Pricing />} />
