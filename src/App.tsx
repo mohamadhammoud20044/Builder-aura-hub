@@ -14,6 +14,9 @@ import About from "./pages/About";
 import Pricing from "./pages/Pricing";
 import AIContact from "./pages/AIContact";
 import ConversationalAI from "./pages/ConversationalAI";
+import WebsiteBuilderAI from "./pages/WebsiteBuilderAI";
+import CustomAI from "./pages/CustomAI";
+import AIAutomation from "./pages/AIAutomation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,9 +44,12 @@ const App = () => (
               path="/services/conversational-ai"
               element={<ConversationalAI />}
             />
-            <Route path="/services/website-builder" element={<NotFound />} />
-            <Route path="/services/custom-ai" element={<NotFound />} />
-            <Route path="/services/automation" element={<NotFound />} />
+            <Route
+              path="/services/website-builder"
+              element={<WebsiteBuilderAI />}
+            />
+            <Route path="/services/custom-ai" element={<CustomAI />} />
+            <Route path="/services/automation" element={<AIAutomation />} />
 
             {/* Other Pages (Placeholders for now) */}
             <Route path="/docs" element={<NotFound />} />
