@@ -60,6 +60,10 @@ const Header = () => {
       href: "/ai-services",
     },
     {
+      title: "AI Models",
+      href: "/ai-services/models",
+    },
+    {
       title: "AI Pricing",
       href: "/ai-services/pricing",
     },
