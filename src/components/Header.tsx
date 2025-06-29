@@ -107,6 +107,12 @@ const Header = () => {
           </NavigationMenu>
 
           <Link
+            to="/ai-services"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            AI
+          </Link>
+          <Link
             to="/pricing"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
@@ -180,6 +186,13 @@ const Header = () => {
                 </div>
 
                 <div className="space-y-2">
+                  <Link
+                    to="/ai-services"
+                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    AI Services
+                  </Link>
                   <Link
                     to="/pricing"
                     className="block p-2 text-sm font-medium hover:text-primary transition-colors"
