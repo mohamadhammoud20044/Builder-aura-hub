@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -9,159 +8,150 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   Bot,
+  Code,
+  Smartphone,
   Globe,
-  Sparkles,
-  Zap,
+  Shield,
+  Headphones,
   ArrowRight,
   Check,
   Star,
   Users,
   TrendingUp,
-  Shield,
   Clock,
-  MessageSquare,
+  Award,
+  Zap,
   Palette,
-  Cpu,
-  BarChart3,
-  Workflow,
-  ChevronRight,
-  Play,
+  Database,
+  Cloud,
+  Settings,
 } from "lucide-react";
 
 const Index = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
   const services = [
     {
       icon: Bot,
-      title: "Conversational AI",
+      title: "AI Solutions",
       description:
-        "Advanced chatbots and virtual assistants that understand context and provide human-like interactions for customer service, sales, and support.",
+        "Cutting-edge artificial intelligence services including conversational AI, automation, and custom AI development for your business needs.",
       features: [
-        "Natural Language Processing",
-        "Multi-language Support",
-        "24/7 Availability",
-        "CRM Integration",
+        "AI Chatbots",
+        "Process Automation",
+        "Custom AI Models",
+        "24/7 Support",
       ],
-      price: "Starting at $299/month",
+      link: "/ai-services",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Globe,
-      title: "Website Builder AI",
+      title: "Web Development",
       description:
-        "Automatically generate beautiful, responsive websites using AI. Just describe your business and watch as we create a professional site in minutes.",
+        "Modern, responsive websites and web applications built with the latest technologies to drive your business forward.",
       features: [
-        "AI-Powered Design",
-        "Responsive Layout",
+        "Responsive Design",
+        "E-commerce Sites",
+        "Web Apps",
         "SEO Optimized",
-        "Custom Branding",
       ],
-      price: "Starting at $199/month",
-      gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      icon: Sparkles,
-      title: "Custom AI Solutions",
-      description:
-        "Tailored AI services built specifically for your business needs. From data analysis to process automation, we create solutions that fit your workflow.",
-      features: [
-        "Custom Development",
-        "API Integration",
-        "Scalable Architecture",
-        "Ongoing Support",
-      ],
-      price: "Custom Pricing",
+      link: "/web-development",
       gradient: "from-green-500 to-teal-500",
     },
     {
-      icon: Zap,
-      title: "AI Automation",
+      icon: Smartphone,
+      title: "Mobile Development",
       description:
-        "Streamline your business processes with intelligent automation. Reduce manual work and increase efficiency across all departments.",
+        "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences.",
       features: [
-        "Process Optimization",
-        "Workflow Automation",
-        "Data Processing",
-        "Real-time Analytics",
+        "iOS Apps",
+        "Android Apps",
+        "Cross-Platform",
+        "App Store Publishing",
       ],
-      price: "Starting at $399/month",
+      link: "/mobile-development",
+      gradient: "from-purple-500 to-pink-500",
+    },
+    {
+      icon: Cloud,
+      title: "Cloud Solutions",
+      description:
+        "Scalable cloud infrastructure, migration services, and cloud-native application development for modern businesses.",
+      features: [
+        "Cloud Migration",
+        "DevOps",
+        "Serverless",
+        "Infrastructure Management",
+      ],
+      link: "/cloud-solutions",
       gradient: "from-orange-500 to-red-500",
-    },
-  ];
-
-  const benefits = [
-    {
-      icon: TrendingUp,
-      title: "Increase Revenue",
-      description:
-        "Our AI solutions help businesses increase revenue by 40% on average through improved efficiency and customer satisfaction.",
-    },
-    {
-      icon: Clock,
-      title: "Save Time",
-      description:
-        "Automate repetitive tasks and reduce manual work by up to 80%, allowing your team to focus on strategic initiatives.",
     },
     {
       icon: Shield,
-      title: "Enterprise Security",
+      title: "Cybersecurity",
       description:
-        "Bank-level security with end-to-end encryption, GDPR compliance, and SOC 2 Type II certification.",
+        "Comprehensive security solutions to protect your business from cyber threats and ensure data compliance.",
+      features: [
+        "Security Audits",
+        "Penetration Testing",
+        "Compliance",
+        "24/7 Monitoring",
+      ],
+      link: "/cybersecurity",
+      gradient: "from-indigo-500 to-purple-500",
     },
     {
-      icon: Users,
-      title: "Expert Support",
+      icon: Headphones,
+      title: "IT Support",
       description:
-        "24/7 support from our team of AI specialists and dedicated account managers for enterprise clients.",
-    },
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
-      role: "CEO",
-      content:
-        "COFTECH transformed our customer support. Our response time improved by 70% and customer satisfaction is at an all-time high.",
-      rating: 5,
-    },
-    {
-      name: "Michael Chen",
-      company: "Digital Marketing Pro",
-      role: "Marketing Director",
-      content:
-        "The website builder AI created a stunning site for our client in just 30 minutes. It would have taken our team weeks to build manually.",
-      rating: 5,
-    },
-    {
-      name: "Emily Rodriguez",
-      company: "Manufacturing Solutions",
-      role: "Operations Manager",
-      content:
-        "Custom AI automation reduced our processing time by 85%. The ROI was visible within the first month of implementation.",
-      rating: 5,
+        "Reliable IT support and maintenance services to keep your technology running smoothly around the clock.",
+      features: [
+        "24/7 Support",
+        "System Maintenance",
+        "Remote Assistance",
+        "Hardware Setup",
+      ],
+      link: "/it-support",
+      gradient: "from-cyan-500 to-blue-500",
     },
   ];
 
   const stats = [
-    { number: "500+", label: "Businesses Served" },
-    { number: "2M+", label: "Interactions Processed" },
-    { number: "99.9%", label: "Uptime Guarantee" },
-    { number: "40%", label: "Average Revenue Increase" },
+    { number: "1000+", label: "Projects Delivered", icon: Award },
+    { number: "250+", label: "Happy Clients", icon: Users },
+    { number: "99.9%", label: "Uptime Guarantee", icon: TrendingUp },
+    { number: "24/7", label: "Expert Support", icon: Clock },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
+  const testimonials = [
+    {
+      name: "David Wilson",
+      company: "TechCorp International",
+      role: "CTO",
+      content:
+        "COFTECH transformed our entire digital infrastructure. Their expertise in both AI and traditional tech solutions is unmatched.",
+      rating: 5,
+    },
+    {
+      name: "Sarah Chen",
+      company: "StartupPro",
+      role: "Founder",
+      content:
+        "From web development to AI integration, COFTECH delivered everything we needed to scale our business rapidly.",
+      rating: 5,
+    },
+    {
+      name: "Michael Rodriguez",
+      company: "Enterprise Solutions Ltd",
+      role: "CEO",
+      content:
+        "Outstanding service across all technology domains. COFTECH is our go-to partner for all digital transformation needs.",
+      rating: 5,
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
@@ -173,29 +163,28 @@ const Index = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDEyOSwgMTQwLCAxNDgsIDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20"></div>
 
         <div className="relative container mx-auto px-4 py-20 text-center">
-          <div className="max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-gradient-ai border-0 text-white px-4 py-2 animate-fadeInUp">
-              🚀 Leading AI Innovation
+          <div className="max-w-5xl mx-auto">
+            <Badge className="mb-6 bg-gradient-ai border-0 text-white px-4 py-2">
+              🚀 Complete Technology Solutions
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-fadeInUp">
-              Transform Your Business with AI
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
+              COFTECH SERVICES
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp">
-              Unlock the power of artificial intelligence with our comprehensive
-              suite of services. From conversational AI to custom automation, we
-              help businesses thrive in the digital age.
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+              Your trusted partner for comprehensive technology solutions. From
+              AI and web development to cybersecurity and cloud services, we
+              deliver innovation that drives your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button
                 size="lg"
                 className="bg-gradient-ai border-0 text-white px-8 py-6 text-lg"
               >
-                Start Your AI Journey
+                Explore Our Services
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button size="lg" variant="outline" className="px-8 py-6 text-lg">
-                <Play className="mr-2 w-5 h-5" />
-                Watch Demo
+                Get Free Consultation
               </Button>
             </div>
 
@@ -203,6 +192,9 @@ const Index = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center">
+                    <stat.icon className="w-8 h-8 text-white" />
+                  </div>
                   <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
                     {stat.number}
                   </div>
@@ -221,43 +213,38 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Our AI <span className="gradient-text">Services</span>
+              Our <span className="gradient-text">Services</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Choose from our comprehensive range of AI solutions designed to
-              meet every business need
+              Comprehensive technology solutions designed to accelerate your
+              business growth and digital transformation journey.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden"
+                className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden h-full"
               >
                 <div
                   className={`h-2 bg-gradient-to-r ${service.gradient}`}
                 ></div>
                 <CardHeader className="pb-4">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center mb-4">
                     <div
-                      className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center`}
+                      className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center mr-4`}
                     >
                       <service.icon className="w-6 h-6 text-white" />
                     </div>
-                    <Badge variant="secondary" className="text-xs">
-                      {service.price}
-                    </Badge>
+                    <CardTitle className="text-xl">{service.title}</CardTitle>
                   </div>
-                  <CardTitle className="text-2xl mb-2">
-                    {service.title}
-                  </CardTitle>
                   <CardDescription className="text-base">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 mb-6">
+                <CardContent className="flex-1 flex flex-col">
+                  <ul className="space-y-2 mb-6 flex-1">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-sm">
                         <Check className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
@@ -265,10 +252,12 @@ const Index = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full group-hover:bg-gradient-ai transition-all duration-300">
-                    Learn More
-                    <ChevronRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  <Link to={service.link}>
+                    <Button className="w-full group-hover:bg-gradient-ai transition-all duration-300">
+                      Learn More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -276,7 +265,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -284,13 +273,38 @@ const Index = () => {
               Why Choose <span className="gradient-text">COFTECH</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We deliver measurable results that transform your business
-              operations and drive growth
+              We combine technical expertise with business acumen to deliver
+              solutions that drive real results for your organization.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                icon: Zap,
+                title: "Fast Delivery",
+                description:
+                  "Rapid development and deployment without compromising quality.",
+              },
+              {
+                icon: Shield,
+                title: "Secure Solutions",
+                description:
+                  "Enterprise-grade security in every solution we deliver.",
+              },
+              {
+                icon: Users,
+                title: "Expert Team",
+                description:
+                  "Experienced professionals across all technology domains.",
+              },
+              {
+                icon: TrendingUp,
+                title: "Proven Results",
+                description:
+                  "Track record of successful projects and satisfied clients.",
+              },
+            ].map((benefit, index) => (
               <div key={index} className="text-center group">
                 <div className="w-16 h-16 mx-auto mb-6 bg-gradient-ai rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="w-8 h-8 text-white" />
@@ -305,121 +319,48 @@ const Index = () => {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-20 bg-white dark:bg-gray-950">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              How It <span className="gradient-text">Works</span>
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Get started with AI in three simple steps
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Consultation",
-                  description:
-                    "We analyze your business needs and identify the best AI solutions for your goals.",
-                  icon: MessageSquare,
-                },
-                {
-                  step: "02",
-                  title: "Implementation",
-                  description:
-                    "Our experts deploy and integrate AI solutions seamlessly into your existing workflow.",
-                  icon: Cpu,
-                },
-                {
-                  step: "03",
-                  title: "Optimization",
-                  description:
-                    "Continuous monitoring and improvement to ensure maximum performance and ROI.",
-                  icon: BarChart3,
-                },
-              ].map((step, index) => (
-                <div key={index} className="text-center relative">
-                  <div className="w-20 h-20 mx-auto mb-6 bg-gradient-ai rounded-full flex items-center justify-center text-white font-bold text-2xl">
-                    {step.step}
-                  </div>
-                  <step.icon className="w-8 h-8 mx-auto mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    {step.description}
-                  </p>
-                  {index < 2 && (
-                    <div className="hidden md:block absolute top-10 left-full w-full">
-                      <ArrowRight className="w-6 h-6 text-gray-300 mx-auto" />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
-      <section className="py-20 bg-gray-950 text-white">
+      <section className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               What Our <span className="gradient-text">Clients Say</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Don't just take our word for it - hear from businesses that have
-              transformed with AI
+              transformed with COFTECH's comprehensive technology solutions.
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-gray-900 border-gray-800 text-white">
-              <CardContent className="p-8">
-                <div className="flex mb-4">
-                  {[...Array(testimonials[currentTestimonial].rating)].map(
-                    (_, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="border-0 shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
                         key={i}
                         className="w-5 h-5 fill-yellow-400 text-yellow-400"
                       />
-                    ),
-                  )}
-                </div>
-                <blockquote className="text-xl mb-6 leading-relaxed">
-                  "{testimonials[currentTestimonial].content}"
-                </blockquote>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-ai rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                    {testimonials[currentTestimonial].name[0]}
+                    ))}
                   </div>
-                  <div>
-                    <div className="font-semibold">
-                      {testimonials[currentTestimonial].name}
+                  <blockquote className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                    "{testimonial.content}"
+                  </blockquote>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-gradient-ai rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                      {testimonial.name[0]}
                     </div>
-                    <div className="text-gray-400">
-                      {testimonials[currentTestimonial].role} at{" "}
-                      {testimonials[currentTestimonial].company}
+                    <div>
+                      <div className="font-semibold">{testimonial.name}</div>
+                      <div className="text-gray-500 text-sm">
+                        {testimonial.role} at {testimonial.company}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="flex justify-center mt-8 space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-3 h-3 rounded-full transition-colors ${
-                    index === currentTestimonial ? "bg-white" : "bg-gray-600"
-                  }`}
-                  onClick={() => setCurrentTestimonial(index)}
-                />
-              ))}
-            </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -431,12 +372,12 @@ const Index = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Join hundreds of businesses that have already revolutionized their
-            operations with our AI solutions. Start your transformation today.
+            Let's discuss how COFTECH can help accelerate your digital
+            transformation with our comprehensive technology solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="px-8 py-6 text-lg">
-              Get Free Consultation
+              Start Your Project
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button
@@ -444,7 +385,7 @@ const Index = () => {
               variant="outline"
               className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-gray-900"
             >
-              View Pricing
+              Schedule Consultation
             </Button>
           </div>
         </div>
