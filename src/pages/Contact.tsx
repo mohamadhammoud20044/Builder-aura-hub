@@ -16,11 +16,12 @@ const Contact = () => {
         <section className="py-20 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
-              Get in Touch
+              Contact Our AI Team
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to transform your business with AI? We'd love to hear from
-              you. Reach out to discuss your needs and discover how we can help.
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Ready to transform your business with AI? Our AI specialists are
+              here to help. Reach out to discuss your AI needs and discover how
+              our solutions can revolutionize your operations.
             </p>
           </div>
         </section>
@@ -37,8 +38,8 @@ const Contact = () => {
                     {
                       icon: Mail,
                       title: "Email",
-                      info: "hello@aiservices.com",
-                      subtext: "We'll respond within 24 hours",
+                      info: "ai@coftech.com",
+                      subtext: "AI team responds within 24 hours",
                     },
                     {
                       icon: Phone,
@@ -110,7 +111,7 @@ const Contact = () => {
                       Message
                     </label>
                     <Textarea
-                      placeholder="Tell us about your AI needs and how we can help..."
+                      placeholder="Tell us about your AI requirements, automation goals, and how our AI solutions can help transform your business..."
                       rows={5}
                     />
                   </div>
