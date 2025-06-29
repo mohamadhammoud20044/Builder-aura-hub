@@ -54,6 +54,25 @@ const Header = () => {
     },
   ];
 
+  const aiPages = [
+    {
+      title: "AI Services",
+      href: "/ai-services",
+    },
+    {
+      title: "AI Pricing",
+      href: "/ai-services/pricing",
+    },
+    {
+      title: "About AI",
+      href: "/ai-services/about",
+    },
+    {
+      title: "AI Contact",
+      href: "/ai-services/contact",
+    },
+  ];
+
   return (
     <header
       className={cn(
@@ -81,55 +100,49 @@ const Header = () => {
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-                    {services.map((service) => (
-                      <NavigationMenuLink key={service.title} asChild>
-                        <Link
-                          to={service.href}
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          <div className="flex items-center space-x-2">
-                            <service.icon className="w-4 h-4 text-primary" />
-                            <div className="text-sm font-medium leading-none">
-                              {service.title}
+                  <div className="grid w-[400px] gap-3 p-4 md:w-[500px]">
+                    <div className="grid grid-cols-2 gap-3">
+                      {services.map((service) => (
+                        <NavigationMenuLink key={service.title} asChild>
+                          <Link
+                            to={service.href}
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="flex items-center space-x-2">
+                              <service.icon className="w-4 h-4 text-primary" />
+                              <div className="text-sm font-medium leading-none">
+                                {service.title}
+                              </div>
                             </div>
-                          </div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            {service.description}
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    ))}
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              {service.description}
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      ))}
+                    </div>
+                    <div className="border-t pt-3">
+                      <div className="text-xs font-medium text-muted-foreground mb-2 px-3">
+                        AI PAGES
+                      </div>
+                      <div className="grid grid-cols-2 gap-1">
+                        {aiPages.map((page) => (
+                          <NavigationMenuLink key={page.title} asChild>
+                            <Link
+                              to={page.href}
+                              className="block select-none rounded-md p-2 text-sm leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              {page.title}
+                            </Link>
+                          </NavigationMenuLink>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-
-          <Link
-            to="/ai-services"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            AI
-          </Link>
-          <Link
-            to="/pricing"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            Pricing
-          </Link>
-          <Link
-            to="/about"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            About
-          </Link>
-          <Link
-            to="/contact"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            Contact
-          </Link>
         </div>
 
         {/* CTA Button */}
@@ -166,7 +179,7 @@ const Header = () => {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <h3 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
-                    Services
+                    AI Services
                   </h3>
                   <div className="space-y-2">
                     {services.map((service) => (
@@ -186,34 +199,19 @@ const Header = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Link
-                    to="/ai-services"
-                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    AI Services
-                  </Link>
-                  <Link
-                    to="/pricing"
-                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Pricing
-                  </Link>
-                  <Link
-                    to="/about"
-                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    About
-                  </Link>
-                  <Link
-                    to="/contact"
-                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Contact
-                  </Link>
+                  <h3 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
+                    AI Pages
+                  </h3>
+                  {aiPages.map((page) => (
+                    <Link
+                      key={page.title}
+                      to={page.href}
+                      className="block p-2 text-sm font-medium hover:text-primary transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {page.title}
+                    </Link>
+                  ))}
                 </div>
 
                 <div className="space-y-2 pt-4 border-t">
