@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Index from "./pages/Index";
 import AIServices from "./pages/AIServices";
+import AIModels from "./pages/AIModels";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
             <Route path="/ai-services" element={<AIServices />} />
+            <Route path="/ai-services/models" element={<AIModels />} />
             <Route path="/ai-services/about" element={<About />} />
             <Route path="/ai-services/pricing" element={<Pricing />} />
             <Route path="/ai-services/contact" element={<AIContact />} />
