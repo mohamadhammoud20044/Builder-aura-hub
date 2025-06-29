@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
+import AIContact from "./pages/AIContact";
 import ConversationalAI from "./pages/ConversationalAI";
 import NotFound from "./pages/NotFound";
 
@@ -31,7 +32,7 @@ const App = () => (
             <Route path="/ai-services" element={<AIServices />} />
             <Route path="/ai-services/about" element={<About />} />
             <Route path="/ai-services/pricing" element={<Pricing />} />
-            <Route path="/ai-services/contact" element={<Contact />} />
+            <Route path="/ai-services/contact" element={<AIContact />} />
 
             {/* Service Pages */}
             <Route
