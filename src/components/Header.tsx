@@ -143,6 +143,25 @@ const Header = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+
+          <Link
+            to="/services"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Services
+          </Link>
+          <Link
+            to="/contact"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Contact
+          </Link>
+          <Link
+            to="/team"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Team
+          </Link>
         </div>
 
         {/* CTA Button */}
@@ -212,6 +231,33 @@ const Header = () => {
                       {page.title}
                     </Link>
                   ))}
+                </div>
+
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
+                    Main Pages
+                  </h3>
+                  <Link
+                    to="/services"
+                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                  <Link
+                    to="/team"
+                    className="block p-2 text-sm font-medium hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Team
+                  </Link>
                 </div>
 
                 <div className="space-y-2 pt-4 border-t">
