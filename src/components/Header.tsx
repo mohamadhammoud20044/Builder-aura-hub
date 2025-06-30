@@ -186,8 +186,7 @@ const Header = () => {
               <Menu className="w-5 h-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-80">
-            <div className="flex flex-col space-y-6 mt-6">
+          <SheetContent side="right" className="w-80 flex flex-col">
               <div className="flex items-center justify-between">
                 <Link to="/" className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-gradient-ai rounded-lg flex items-center justify-center">
@@ -198,8 +197,10 @@ const Header = () => {
                   </span>
                 </Link>
               </div>
+            </div>
 
-              <div className="space-y-4">
+            <div className="flex-1 overflow-y-auto">
+              <div className="space-y-4 pr-2">
                 <div className="space-y-2">
                   <h3 className="font-semibold text-sm text-muted-foreground uppercase tracking-wider">
                     AI Services
