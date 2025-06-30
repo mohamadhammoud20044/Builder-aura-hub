@@ -395,16 +395,14 @@ const Index = () => {
     </div>
   );
 };
-// other imports...
 import { useEffect, useState } from 'react';
-
-/* existing page content and components */
+import Header from '../components/Header'; // adjust if needed
 
 const Testimonials = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://ai-backend-1-i0bk.onrender.com')
+    fetch('https://ai-backend-1-i0bk.onrender.com/api/test')
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -416,8 +414,39 @@ const Testimonials = () => {
   }, []);
 
   return (
+    <div className="p-4 bg-white text-black">
+      <h2 className="text-xl font-bold mb-2">Testimonials</h2>
+      {data ? (
+        <pre className="bg-gray-100 p-2 rounded">{JSON.stringify(data, null, 2)}</pre>
+      ) : (
+        <p>Loading data from backend...</p>
+      )}
+    </div>
+  );
+};
 
-// ✅ This stays last
 export default function HomePage() {
   return (
+    <div className="min-h-screen bg-white dark:bg-gray-950">
+      <Header />
+
+      {/* You can leave your Hero section and others here... */}
+
+      <section className="relative pt-20 pb-16 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50 dark:from-blue-900 dark:via-blue-900 dark:to-blue-800"></div>
+        <div className="relative container mx-auto px-4 py-20 text-center">
+          <h1 className="text-4xl font-bold mb-4">Complete Technology Solutions</h1>
+          <p className="text-lg text-gray-700 dark:text-gray-300">
+            From web development to AI integration, COFTECH delivered everything we needed to scale our business rapidly.
+          </p>
+        </div>
+      </section>
+
+      {/* ✅ Show backend-connected testimonials */}
+      <Testimonials />
+    </div>
+  );
+}
+
+
   
