@@ -400,7 +400,7 @@ import { useEffect } from 'react';
 
 export default function HomePage() {
   useEffect(() => {
-    fetch('https://your-backend-url/api/status') // Replace with your actual backend URL
+    fetch('https://ai-backend-1-i0bk.onrender.com') // Replace with your actual backend URL
       .then(res => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.json();
