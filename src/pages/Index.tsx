@@ -400,51 +400,44 @@ const Index = () => {
 import { useEffect, useState } from 'react';
 
 const Testimonials = () => {
-  const [data, setData] = useState<any[]>([]);  // expects an array of testimonials
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://ai-backend-1-i0bk.onrender.com/api/test') // your backend URL here
-      .then((res) => {
+    fetch('https://ai-backend-1-i0bk.onrender.com/api/test')
+      .then(res => {
         if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
+          throw new Error('Network response was not ok');
         }
-        return res.json();  // parse JSON response
+        return res.json(); // parse JSON
       })
-      .then((data) => {
-        setData(data);      // store data in state
-        setLoading(false);  // stop loading
-      })
-      .catch((err) => {
+      .then(jsonData => setData(jsonData))
+      .catch(err => {
+        console.error('Fetch error:', err);
         setError(err.message);
-        setLoading(false);
       });
   }, []);
 
-  if (loading) return <p>Loading testimonials...</p>;
-  if (error) return <p>Error loading testimonials: {error}</p>;
+  if (error) {
+    return <p className="text-red-600">Failed to load testimonials: {error}</p>;
+  }
 
+  if (!data) {
+    return <p>Loading testimonials...</p>;
+  }
+
+  // You can render the data however you want.
+  // For example, here’s a simple JSON display:
   return (
-    <div className="p-4 bg-white text-black max-w-3xl mx-auto">
-      <h2 className="text-xl font-bold mb-4">Testimonials</h2>
-      {data.length === 0 ? (
-        <p>No testimonials found.</p>
-      ) : (
-        <ul className="space-y-4">
-          {data.map((item, idx) => (
-            <li key={idx} className="border p-4 rounded shadow">
-              <p>{item.testimonial || JSON.stringify(item)}</p>
-              {item.author && <p className="text-sm text-gray-600 mt-2">— {item.author}</p>}
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className="p-4 bg-white text-black">
+      <h2 className="text-xl font-bold mb-2">Testimonials</h2>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   );
 };
 
 export default Testimonials;
+
 
 
 
