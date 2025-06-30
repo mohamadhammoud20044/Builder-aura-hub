@@ -400,10 +400,10 @@ import { useEffect } from 'react';
 
 export default function BackendConnectionTest() {
   useEffect(() => {
-    fetch('https://your-backend-url/api/hello') // replace with your backend URL
+    fetch('https://ai-backend-1-i0bk.onrender.com')  // replace with your backend URL (root)
       .then(res => {
         if (!res.ok) throw new Error('Network response was not ok');
-        // Connection successful, you can add logic here if needed
+        // Connection successful, no need to do anything
       })
       .catch(err => {
         console.error('Failed to connect to backend:', err);
@@ -412,6 +412,7 @@ export default function BackendConnectionTest() {
 
   return null; // no UI rendered
 }
+
 
 
 
