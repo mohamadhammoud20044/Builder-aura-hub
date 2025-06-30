@@ -30,7 +30,7 @@ import {
 
 const Index = () => {
   useEffect(() => {
-    fetch('https://ai-backend-1-i0bk.onrender.com') // <-- Replace with your backend URL
+    fetch('https://ai-backend-1-i0bk.onrender.com/api/status') // <-- Replace with your backend URL
       .then(res => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.json();
