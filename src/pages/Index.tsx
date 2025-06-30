@@ -153,7 +153,7 @@ const Index = () => {
     },
   ];
 useEffect(() => {
-    fetch('https://your-backend-name.onrender.com/api/test')
+    fetch('https://ai-backend-1-i0bk.onrender.com')
       .then((res) => res.json())
       .then((data) => {
         setData(data);
