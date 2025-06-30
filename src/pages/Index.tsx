@@ -152,17 +152,6 @@ const Index = () => {
       rating: 5,
     },
   ];
-useEffect(() => {
-    fetch('https://ai-backend-1-i0bk.onrender.com')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        console.log(data); // Check this in browser console
-      })
-      .catch((err) => {
-        console.error('Error fetching data:', err);
-      });
-  }, []);
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <Header />
@@ -405,5 +394,46 @@ useEffect(() => {
     </div>
   );
 };
+// other imports...
+import { useEffect, useState } from 'react';
+
+/* existing page content and components */
+
+const Testimonials = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch('https://ai-backend-1-i0bk.onrender.com')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.error('Error fetching data:', err);
+      });
+  }, []);
+
+  return (
+    <div className="p-4 bg-white text-black">
+      <h2 className="text-xl font-bold mb-2">Testimonials</h2>
+      {data ? (
+        <pre className="bg-gray-100 p-2 rounded">{JSON.stringify(data, null, 2)}</pre>
+      ) : (
+        <p>Loading data from backend...</p>
+      )}
+    </div>
+  );
+};
+
+// ✅ This stays last
+export default function HomePage() {
+  return (
+    <>
+      <Header />
+      <Testimonials /> {/* Add this inside the page */}
+    </>
+  );
+}
 
 export default Index;
