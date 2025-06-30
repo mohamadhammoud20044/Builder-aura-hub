@@ -24,7 +24,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://ai-backend-1-i0bk.onrender.com")
+    fetch("https://your-backend-name.onrender.com/api/ai-models")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((err) => console.error("Error fetching API:", err));
