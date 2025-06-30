@@ -19,7 +19,6 @@ import CustomAI from "./pages/CustomAI";
 import AIAutomation from "./pages/AIAutomation";
 import NotFound from "./pages/NotFound";
 
-export default App;
 
 
 const queryClient = new QueryClient();
