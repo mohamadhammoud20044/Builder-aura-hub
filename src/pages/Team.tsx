@@ -115,10 +115,10 @@ const Team = () => {
   ];
 
   const stats = [
-    { number: "70+", label: "Team Members", icon: Users },
-    { number: "15+", label: "Years Experience", icon: Award },
+    { number: "4", label: "Core Team Members", icon: Users },
+    { number: "10+", label: "Years Experience", icon: Award },
     { number: "500+", label: "Projects Delivered", icon: TrendingUp },
-    { number: "50+", label: "Certifications", icon: Award },
+    { number: "20+", label: "Certifications", icon: Award },
   ];
 
   return (
