@@ -152,7 +152,17 @@ const Index = () => {
       rating: 5,
     },
   ];
-
+useEffect(() => {
+    fetch('https://your-backend-name.onrender.com/api/test')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        console.log(data); // Check this in browser console
+      })
+      .catch((err) => {
+        console.error('Error fetching data:', err);
+      });
+  }, []);
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <Header />
