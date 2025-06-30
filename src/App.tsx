@@ -18,26 +18,6 @@ import WebsiteBuilderAI from "./pages/WebsiteBuilderAI";
 import CustomAI from "./pages/CustomAI";
 import AIAutomation from "./pages/AIAutomation";
 import NotFound from "./pages/NotFound";
-import React, { useEffect, useState } from "react";
-
-function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch("https://your-backend-name.onrender.com/api/ai-models")
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((err) => console.error("Error fetching API:", err));
-  }, []);
-
-  return (
-    <div>
-      <h1>AI Models</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-      {/* Your existing app UI here */}
-    </div>
-  );
-}
 
 export default App;
 
