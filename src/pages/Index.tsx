@@ -416,23 +416,8 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="p-4 bg-white text-black">
-      <h2 className="text-xl font-bold mb-2">Testimonials</h2>
-      {data ? (
-        <pre className="bg-gray-100 p-2 rounded">{JSON.stringify(data, null, 2)}</pre>
-      ) : (
-        <p>Loading data from backend...</p>
-      )}
-    </div>
-  );
-};
 
 // ✅ This stays last
 export default function HomePage() {
   return (
-    <>
-      <Header />
-      <Testimonials /> {/* Add this inside the page */}
-    </>
-  );
-}
+  
