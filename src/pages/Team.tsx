@@ -21,13 +21,13 @@ import {
 const Team = () => {
   const teamMembers = [
     {
-      name: "Alex Rodriguez",
-      role: "CEO & Founder",
-      image: "AR",
-      bio: "15+ years in tech leadership, former CTO at Fortune 500 companies. Passionate about using technology to solve real-world problems.",
+      name: "Mohamad Hammoud",
+      role: "CEO & Technician",
+      image: "MH",
+      bio: "Visionary leader driving COFTECH's technological innovation and strategic direction. Expert in both business leadership and hands-on technical implementation.",
       expertise: [
         "Strategic Leadership",
-        "Technology Vision",
+        "Technical Implementation",
         "Business Development",
       ],
       social: {
@@ -36,14 +36,25 @@ const Team = () => {
       },
     },
     {
-      name: "Sarah Chen",
-      role: "CTO & Co-Founder",
-      image: "SC",
-      bio: "AI/ML expert with PhD in Computer Science. Led AI initiatives at major tech companies before founding COFTECH.",
+      name: "Komail Zein",
+      role: "CEO PR",
+      image: "KZ",
+      bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
+      expertise: ["Public Relations", "Brand Management", "Media Strategy"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "Khallil Moussa Hammoud",
+      role: "President & Programmer",
+      image: "KMH",
+      bio: "Technical president overseeing COFTECH's development operations and programming excellence. Expert in software architecture and team leadership.",
       expertise: [
-        "Artificial Intelligence",
-        "Machine Learning",
+        "Software Development",
         "System Architecture",
+        "Team Leadership",
       ],
       social: {
         linkedin: "#",
@@ -51,44 +62,11 @@ const Team = () => {
       },
     },
     {
-      name: "Michael Thompson",
-      role: "Head of Development",
-      image: "MT",
-      bio: "Full-stack development expert with 12+ years experience building scalable web and mobile applications.",
-      expertise: ["Full-Stack Development", "Team Leadership", "DevOps"],
-      social: {
-        linkedin: "#",
-        github: "#",
-      },
-    },
-    {
-      name: "Jessica Kim",
-      role: "Head of AI Research",
-      image: "JK",
-      bio: "AI researcher and engineer specializing in NLP and computer vision. Published researcher with 20+ papers.",
-      expertise: ["Natural Language Processing", "Computer Vision", "Research"],
-      social: {
-        linkedin: "#",
-        twitter: "#",
-      },
-    },
-    {
-      name: "David Wilson",
-      role: "Lead Security Engineer",
-      image: "DW",
-      bio: "Cybersecurity expert with extensive experience in enterprise security and compliance frameworks.",
-      expertise: ["Cybersecurity", "Compliance", "Risk Management"],
-      social: {
-        linkedin: "#",
-        github: "#",
-      },
-    },
-    {
-      name: "Emily Foster",
-      role: "Head of Design",
-      image: "EF",
-      bio: "UX/UI design expert focused on creating intuitive and beautiful user experiences across all platforms.",
-      expertise: ["UX/UI Design", "Product Design", "User Research"],
+      name: "Firas Soufan",
+      role: "CEO PR Marketing",
+      image: "FS",
+      bio: "Marketing and PR strategist driving COFTECH's market presence and customer engagement. Expert in digital marketing and brand positioning.",
+      expertise: ["Digital Marketing", "Brand Strategy", "Customer Engagement"],
       social: {
         linkedin: "#",
         twitter: "#",
