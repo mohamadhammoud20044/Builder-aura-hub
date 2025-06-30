@@ -398,19 +398,30 @@ const Index = () => {
 
 import { useEffect } from 'react';
 
-export default function BackendConnectionTest() {
+export default function HomePage() {
   useEffect(() => {
-    fetch('https://ai-backend-1-i0bk.onrender.com')  // replace with your backend URL (root)
+    fetch('https://your-backend-url/api/status') // Replace with your actual backend URL
       .then(res => {
         if (!res.ok) throw new Error('Network response was not ok');
-        // Connection successful, no need to do anything
+        return res.json();
+      })
+      .then(data => {
+        // You can do something with data here if you want, or nothing
+        console.log('Backend response:', data);
       })
       .catch(err => {
         console.error('Failed to connect to backend:', err);
       });
   }, []);
 
-  return null; // no UI rendered
+  return (
+    <div className="min-h-screen bg-white dark:bg-gray-950">
+      {/* Your entire existing homepage content goes here */}
+      {/* For example: */}
+      <h1 className="text-4xl font-bold">Welcome to my homepage</h1>
+      {/* ... rest of your content ... */}
+    </div>
+  );
 }
 
 
