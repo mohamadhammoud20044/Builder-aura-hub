@@ -77,40 +77,28 @@ const Team = () => {
   const departments = [
     {
       icon: Brain,
-      title: "AI & Research",
+      title: "Leadership & Strategy",
       description:
-        "Our AI team develops cutting-edge machine learning solutions",
-      count: "12 specialists",
+        "Executive leadership driving vision and strategic direction",
+      count: "Core leadership",
     },
     {
       icon: Code,
-      title: "Development",
-      description: "Full-stack developers building robust applications",
-      count: "18 engineers",
-    },
-    {
-      icon: Shield,
-      title: "Security",
-      description: "Cybersecurity experts protecting digital assets",
-      count: "8 specialists",
-    },
-    {
-      icon: Globe,
-      title: "Web & Mobile",
-      description: "Creating exceptional digital experiences",
-      count: "15 developers",
-    },
-    {
-      icon: Cloud,
-      title: "Cloud & DevOps",
-      description: "Infrastructure and deployment specialists",
-      count: "10 engineers",
+      title: "Technical Development",
+      description: "Programming and technical implementation expertise",
+      count: "Development focus",
     },
     {
       icon: Users,
-      title: "Support & Consulting",
-      description: "Customer success and technical consulting",
-      count: "7 consultants",
+      title: "Public Relations",
+      description: "Brand management and marketing communications",
+      count: "PR & Marketing",
+    },
+    {
+      icon: Globe,
+      title: "Business Operations",
+      description: "Comprehensive business and technology solutions",
+      count: "Full-service team",
     },
   ];
 
