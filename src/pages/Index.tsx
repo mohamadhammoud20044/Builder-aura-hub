@@ -396,22 +396,6 @@ const Index = () => {
   );
 };
 
-import { useEffect } from 'react';
-
-useEffect(() => {
-  fetch('https://ai-backend-1-i0bk.onrender.com') // replace with your backend URL
-    .then(res => {
-      if (!res.ok) throw new Error('Network response was not ok');
-      return res.json();
-    })
-    .then(data => {
-      // connection successful, do nothing or console.log if you want
-      console.log('Backend response:', data);
-    })
-    .catch(err => {
-      console.error('Backend connection error:', err);
-    });
-}, []);
 
 
 
