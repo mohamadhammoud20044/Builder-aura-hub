@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,9 +13,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   Bot,
-  Code,
-  Smartphone,
   Globe,
+  Smartphone,
+  Cloud,
   Shield,
   Headphones,
   ArrowRight,
@@ -26,13 +26,23 @@ import {
   Clock,
   Award,
   Zap,
-  Palette,
-  Database,
-  Cloud,
-  Settings,
 } from "lucide-react";
 
 const Index = () => {
+  useEffect(() => {
+    fetch('https://ai-backend-1-i0bk.onrender.com') // <-- Replace with your backend URL
+      .then(res => {
+        if (!res.ok) throw new Error('Network response was not ok');
+        return res.json();
+      })
+      .then(data => {
+        console.log('Backend response:', data);
+      })
+      .catch(err => {
+        console.error('Failed to connect to backend:', err);
+      });
+  }, []);
+
   const services = [
     {
       icon: Bot,
@@ -153,6 +163,7 @@ const Index = () => {
       rating: 5,
     },
   ];
+
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <Header />
@@ -396,11 +407,4 @@ const Index = () => {
   );
 };
 
-
-
-
-
-
-
-
-  
+export default Index;
