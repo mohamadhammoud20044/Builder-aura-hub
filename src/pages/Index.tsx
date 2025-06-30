@@ -396,47 +396,24 @@ const Index = () => {
   );
 };
 
+import { useEffect } from 'react';
 
-import { useEffect, useState } from 'react';
-
-const Testimonials = () => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-
+export default function BackendConnectionTest() {
   useEffect(() => {
-    fetch('https://ai-backend-1-i0bk.onrender.com/api/test')
+    fetch('https://your-backend-url/api/hello') // replace with your backend URL
       .then(res => {
-        if (!res.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return res.json(); // parse JSON
+        if (!res.ok) throw new Error('Network response was not ok');
+        // Connection successful, you can add logic here if needed
       })
-      .then(jsonData => setData(jsonData))
       .catch(err => {
-        console.error('Fetch error:', err);
-        setError(err.message);
+        console.error('Failed to connect to backend:', err);
       });
   }, []);
 
-  if (error) {
-    return <p className="text-red-600">Failed to load testimonials: {error}</p>;
-  }
+  return null; // no UI rendered
+}
 
-  if (!data) {
-    return <p>Loading testimonials...</p>;
-  }
 
-  // You can render the data however you want.
-  // For example, here’s a simple JSON display:
-  return (
-    <div className="p-4 bg-white text-black">
-      <h2 className="text-xl font-bold mb-2">Testimonials</h2>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </div>
-  );
-};
-
-export default Testimonials;
 
 
 
