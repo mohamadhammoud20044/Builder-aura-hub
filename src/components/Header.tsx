@@ -275,12 +275,16 @@ const Header = () => {
                     <span className="text-sm font-medium">Theme</span>
                     <ThemeToggle />
                   </div>
-                  <Button variant="outline" className="w-full">
-                    Sign In
-                  </Button>
-                  <Button className="w-full bg-gradient-ai border-0">
-                    Get Started
-                  </Button>
+                  <Link to="/signin">
+                    <Button variant="outline" className="w-full">
+                      Sign In
+                    </Button>
+                  </Link>
+                  <Link to="/ai-services/pricing">
+                    <Button className="w-full bg-gradient-ai border-0">
+                      Get Started
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
