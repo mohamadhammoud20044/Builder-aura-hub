@@ -37,7 +37,7 @@ const Team = () => {
     },
     {
       name: "Mohamad Ibrahim",
-      role: "CEO PR",
+      role: "PR",
       image: "MI",
       bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
       expertise: ["Public Relations", "Brand Management", "Media Strategy"],
