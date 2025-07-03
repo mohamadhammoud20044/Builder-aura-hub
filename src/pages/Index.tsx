@@ -259,9 +259,9 @@ const Index = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link to={service.link}>
+                    <Link to="/contact">
                       <Button className="w-full group-hover:bg-gradient-ai transition-all duration-300">
-                        Learn More
+                        Contact Us Now!
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
                     </Link>
