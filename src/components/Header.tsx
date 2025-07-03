@@ -171,12 +171,16 @@ const Header = () => {
         {/* CTA Button */}
         <div className="hidden lg:flex items-center space-x-4">
           <ThemeToggle />
-          <Button variant="outline" size="sm">
-            Sign In
-          </Button>
-          <Button size="sm" className="bg-gradient-ai border-0">
-            Get Started
-          </Button>
+          <Link to="/signin">
+            <Button variant="outline" size="sm">
+              Sign In
+            </Button>
+          </Link>
+          <Link to="/services">
+            <Button size="sm" className="bg-gradient-ai border-0">
+              Get Started
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu */}
@@ -271,12 +275,16 @@ const Header = () => {
                     <span className="text-sm font-medium">Theme</span>
                     <ThemeToggle />
                   </div>
-                  <Button variant="outline" className="w-full">
-                    Sign In
-                  </Button>
-                  <Button className="w-full bg-gradient-ai border-0">
-                    Get Started
-                  </Button>
+                  <Link to="/signin">
+                    <Button variant="outline" className="w-full">
+                      Sign In
+                    </Button>
+                  </Link>
+                  <Link to="/services">
+                    <Button className="w-full bg-gradient-ai border-0">
+                      Get Started
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

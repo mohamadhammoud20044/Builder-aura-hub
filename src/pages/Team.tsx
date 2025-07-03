@@ -21,34 +21,8 @@ import {
 const Team = () => {
   const teamMembers = [
     {
-      name: "Mohamad Hammoud",
-      role: "CEO & Technician",
-      image: "MH",
-      bio: "Visionary leader driving COFTECH's technological innovation and strategic direction. Expert in both business leadership and hands-on technical implementation.",
-      expertise: [
-        "Strategic Leadership",
-        "Technical Implementation",
-        "Business Development",
-      ],
-      social: {
-        linkedin: "#",
-        twitter: "#",
-      },
-    },
-    {
-      name: "Komail Zein",
-      role: "CEO PR",
-      image: "KZ",
-      bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
-      expertise: ["Public Relations", "Brand Management", "Media Strategy"],
-      social: {
-        linkedin: "#",
-        twitter: "#",
-      },
-    },
-    {
       name: "Khallil Moussa Hammoud",
-      role: "President & Programmer",
+      role: "President",
       image: "KMH",
       bio: "Technical president overseeing COFTECH's development operations and programming excellence. Expert in software architecture and team leadership.",
       expertise: [
@@ -62,11 +36,48 @@ const Team = () => {
       },
     },
     {
+      name: "Mohamad Hammoud",
+      role: "CEO",
+      image: "MH",
+      bio: "Visionary leader driving COFTECH's technological innovation and strategic direction. Expert in both business leadership and hands-on technical implementation.",
+      expertise: [
+        "Strategic Leadership",
+        "Technical Implementation",
+        "Business Development",
+      ],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+      },
+    },
+    {
       name: "Firas Soufan",
-      role: "CEO PR Marketing",
+      role: "CMO",
       image: "FS",
       bio: "Marketing and PR strategist driving COFTECH's market presence and customer engagement. Expert in digital marketing and brand positioning.",
       expertise: ["Digital Marketing", "Brand Strategy", "Customer Engagement"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "Mohamad Ibrahim",
+      role: "PR",
+      image: "MI",
+      bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
+      expertise: ["Public Relations", "Brand Management", "Media Strategy"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "Eliana",
+      role: "PR",
+      image: "EL",
+      bio: "Public relations specialist focused on building COFTECH's brand awareness and maintaining strong relationships with clients and media partners.",
+      expertise: ["Public Relations", "Communications", "Brand Awareness"],
       social: {
         linkedin: "#",
         twitter: "#",
@@ -103,7 +114,7 @@ const Team = () => {
   ];
 
   const stats = [
-    { number: "4", label: "Core Team Members", icon: Users },
+    { number: "5", label: "Core Team Members", icon: Users },
     { number: "10+", label: "Years Experience", icon: Award },
     { number: "500+", label: "Projects Delivered", icon: TrendingUp },
     { number: "20+", label: "Certifications", icon: Award },
