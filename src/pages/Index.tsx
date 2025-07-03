@@ -381,17 +381,25 @@ const Index = () => {
             transformation with our comprehensive technology solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="px-8 py-6 text-lg">
-              Start Your Project
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-gray-900"
-            >
-              Schedule Consultation
-            </Button>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="px-8 py-6 text-lg"
+              >
+                Start Your Project
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                variant="outline"
+                className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-gray-900"
+              >
+                Schedule Consultation
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
