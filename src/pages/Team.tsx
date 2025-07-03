@@ -36,17 +36,6 @@ const Team = () => {
       },
     },
     {
-      name: "Mohamad Ibrahim",
-      role: "PR",
-      image: "MI",
-      bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
-      expertise: ["Public Relations", "Brand Management", "Media Strategy"],
-      social: {
-        linkedin: "#",
-        twitter: "#",
-      },
-    },
-    {
       name: "Khallil Moussa Hammoud",
       role: "President",
       image: "KMH",
@@ -67,6 +56,17 @@ const Team = () => {
       image: "FS",
       bio: "Marketing and PR strategist driving COFTECH's market presence and customer engagement. Expert in digital marketing and brand positioning.",
       expertise: ["Digital Marketing", "Brand Strategy", "Customer Engagement"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "Mohamad Ibrahim",
+      role: "PR",
+      image: "MI",
+      bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
+      expertise: ["Public Relations", "Brand Management", "Media Strategy"],
       social: {
         linkedin: "#",
         twitter: "#",
