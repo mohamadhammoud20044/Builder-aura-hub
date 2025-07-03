@@ -63,10 +63,21 @@ const Team = () => {
     },
     {
       name: "Firas Soufan",
-      role: "CEO PR Marketing",
+      role: "CMO",
       image: "FS",
       bio: "Marketing and PR strategist driving COFTECH's market presence and customer engagement. Expert in digital marketing and brand positioning.",
       expertise: ["Digital Marketing", "Brand Strategy", "Customer Engagement"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+      },
+    },
+    {
+      name: "Eliana",
+      role: "PR",
+      image: "EL",
+      bio: "Public relations specialist focused on building COFTECH's brand awareness and maintaining strong relationships with clients and media partners.",
+      expertise: ["Public Relations", "Communications", "Brand Awareness"],
       social: {
         linkedin: "#",
         twitter: "#",
