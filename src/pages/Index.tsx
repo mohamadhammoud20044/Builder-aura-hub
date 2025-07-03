@@ -173,16 +173,24 @@ const Index = () => {
               deliver innovation that drives your business forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button
-                size="lg"
-                className="bg-gradient-ai border-0 text-white px-8 py-6 text-lg"
-              >
-                Explore Our Services
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="px-8 py-6 text-lg">
-                Get Free Consultation
-              </Button>
+              <Link to="/services">
+                <Button
+                  size="lg"
+                  className="bg-gradient-ai border-0 text-white px-8 py-6 text-lg"
+                >
+                  Explore Our Services
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8 py-6 text-lg"
+                >
+                  Get Free Consultation
+                </Button>
+              </Link>
             </div>
 
             {/* Stats */}
