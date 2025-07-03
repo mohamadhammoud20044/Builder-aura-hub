@@ -17,9 +17,8 @@ import ConversationalAI from "./pages/ConversationalAI";
 import WebsiteBuilderAI from "./pages/WebsiteBuilderAI";
 import CustomAI from "./pages/CustomAI";
 import AIAutomation from "./pages/AIAutomation";
+import SignIn from "./pages/SignIn";
 import NotFound from "./pages/NotFound";
-
-
 
 const queryClient = new QueryClient();
 
