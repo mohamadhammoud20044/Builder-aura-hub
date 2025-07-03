@@ -225,10 +225,12 @@ const Services = () => {
                           </li>
                         ))}
                       </ul>
-                      <Button className="w-full group-hover:bg-gradient-ai transition-all duration-300">
-                        Learn More
-                        <ArrowRight className="ml-2 w-4 h-4" />
-                      </Button>
+                      <Link to="/contact">
+                        <Button className="w-full group-hover:bg-gradient-ai transition-all duration-300">
+                          Contact Us Now!
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </Button>
+                      </Link>
                     </CardContent>
                   </Card>
                 ))}
