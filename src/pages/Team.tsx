@@ -48,7 +48,7 @@ const Team = () => {
     },
     {
       name: "Khallil Moussa Hammoud",
-      role: "President & Programmer",
+      role: "President",
       image: "KMH",
       bio: "Technical president overseeing COFTECH's development operations and programming excellence. Expert in software architecture and team leadership.",
       expertise: [
