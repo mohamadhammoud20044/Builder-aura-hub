@@ -280,7 +280,7 @@ const Header = () => {
                       Sign In
                     </Button>
                   </Link>
-                  <Link to="/ai-services/pricing">
+                  <Link to="/services">
                     <Button className="w-full bg-gradient-ai border-0">
                       Get Started
                     </Button>
