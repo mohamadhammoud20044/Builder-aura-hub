@@ -52,6 +52,9 @@ const App = () => (
             <Route path="/services/custom-ai" element={<CustomAI />} />
             <Route path="/services/automation" element={<AIAutomation />} />
 
+            {/* Authentication */}
+            <Route path="/signin" element={<SignIn />} />
+
             {/* Other Pages (Placeholders for now) */}
             <Route path="/docs" element={<NotFound />} />
             <Route path="/api" element={<NotFound />} />
