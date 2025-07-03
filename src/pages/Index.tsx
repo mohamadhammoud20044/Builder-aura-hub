@@ -152,8 +152,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950">
-      <Header />
+    <PageTransition>
+      <div className="min-h-screen bg-white dark:bg-gray-950">
+        <Header />
 
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
@@ -184,11 +185,7 @@ const Index = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="px-8 py-6 text-lg"
-                >
+                <Button size="lg" variant="outline" className="px-8 py-6 text-lg">
                   Get Free Consultation
                 </Button>
               </Link>
@@ -383,11 +380,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button
-                size="lg"
-                variant="secondary"
-                className="px-8 py-6 text-lg"
-              >
+              <Button size="lg" variant="secondary" className="px-8 py-6 text-lg">
                 Start Your Project
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
