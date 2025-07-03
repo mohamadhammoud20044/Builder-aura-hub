@@ -114,7 +114,7 @@ const Team = () => {
   ];
 
   const stats = [
-    { number: "4", label: "Core Team Members", icon: Users },
+    { number: "5", label: "Core Team Members", icon: Users },
     { number: "10+", label: "Years Experience", icon: Award },
     { number: "500+", label: "Projects Delivered", icon: TrendingUp },
     { number: "20+", label: "Certifications", icon: Award },
