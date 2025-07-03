@@ -38,8 +38,9 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950">
-      <Header />
+    <PageTransition>
+      <div className="min-h-screen bg-white dark:bg-gray-950">
+        <Header />
 
       <div className="pt-20 pb-16 min-h-screen flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50 dark:from-blue-950 dark:via-blue-900 dark:to-blue-800"></div>
