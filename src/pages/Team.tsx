@@ -22,7 +22,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Mohamad Hammoud",
-      role: "CEO & Technician",
+      role: "CEO",
       image: "MH",
       bio: "Visionary leader driving COFTECH's technological innovation and strategic direction. Expert in both business leadership and hands-on technical implementation.",
       expertise: [
