@@ -102,10 +102,11 @@ const AIModelsRepeater = () => {
           setModels(mockModels);
           setLoading(false);
         }, 1000);
-        return;
+      } catch (err) {
+        console.error("Error loading AI models:", err);
+        setError("Failed to load AI models");
+        setLoading(false);
       }
-
-      setLoading(false);
     };
 
     fetchAIModels();
