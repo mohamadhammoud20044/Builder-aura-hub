@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,20 +29,6 @@ import {
 } from "lucide-react";
 
 const Index = () => {
-  useEffect(() => {
-    fetch('https://ai-backend-1-i0bk.onrender.com') // <-- Replace with your backend URL
-      .then(res => {
-        if (!res.ok) throw new Error('Network response was not ok');
-        return res.json();
-      })
-      .then(data => {
-        console.log('Backend response:', data);
-      })
-      .catch(err => {
-        console.error('Failed to connect to backend:', err);
-      });
-  }, []);
-
   const services = [
     {
       icon: Bot,
