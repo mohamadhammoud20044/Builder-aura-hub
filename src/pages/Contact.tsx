@@ -18,7 +18,8 @@ import {
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950">
+    <PageTransition>
+      <div className="min-h-screen bg-white dark:bg-gray-950">
       <Header />
 
       <div className="pt-20">
