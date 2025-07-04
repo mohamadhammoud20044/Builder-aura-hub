@@ -89,7 +89,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 group">
-          <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 p-1 transition-transform group-hover:scale-105">
+          <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-white shadow-sm p-1 transition-transform group-hover:scale-105">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F29c0a7297fc14c1d91748176ea31f04a%2F8b1472ec59ff4eca88d17af94001371f?format=webp&width=800"
               alt="COFTECH"
