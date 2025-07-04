@@ -72,6 +72,7 @@ const AnimatedRoutes = () => {
 
         {/* Company Information */}
         <Route path="/company-info" element={<CompanyInfo />} />
+        <Route path="/press-release" element={<PressRelease />} />
 
         {/* Other Pages (Placeholders for now) */}
         <Route path="/docs" element={<NotFound />} />
