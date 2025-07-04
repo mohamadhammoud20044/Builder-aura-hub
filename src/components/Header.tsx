@@ -92,7 +92,7 @@ const Header = () => {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F29c0a7297fc14c1d91748176ea31f04a%2F8b1472ec59ff4eca88d17af94001371f?format=webp&width=800"
             alt="COFTECH"
-            className="w-12 h-12 object-contain"
+            className="w-24 h-24 object-contain"
           />
           <span className="text-xl font-bold gradient-text">COFTECH</span>
         </Link>
