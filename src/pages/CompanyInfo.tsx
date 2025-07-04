@@ -227,7 +227,7 @@ const CompanyInfo = () => {
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <div className="text-center">
                       <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        KMH
+                        KH
                       </div>
                       <h3 className="text-xl font-bold">
                         Khallil Moussa Hammoud
