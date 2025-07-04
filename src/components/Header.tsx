@@ -86,13 +86,14 @@ const Header = () => {
           : "bg-transparent",
       )}
     >
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-ai rounded-lg flex items-center justify-center">
-            <Bot className="w-5 h-5 text-white" />
-          </div>
-          <span className="text-xl font-bold gradient-text">COFTECH</span>
+        <Link to="/" className="flex items-center group">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F29c0a7297fc14c1d91748176ea31f04a%2F8b1472ec59ff4eca88d17af94001371f?format=webp&width=800"
+            alt="COFTECH"
+            className="w-20 h-20 object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Navigation */}
