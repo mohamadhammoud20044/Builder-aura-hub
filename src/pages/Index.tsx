@@ -1,5 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import PageTransition from "@/components/PageTransition";
 import {
   Card,
   CardContent,
@@ -12,9 +14,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   Bot,
-  Code,
-  Smartphone,
   Globe,
+  Smartphone,
+  Cloud,
   Shield,
   Headphones,
   ArrowRight,
@@ -25,10 +27,6 @@ import {
   Clock,
   Award,
   Zap,
-  Palette,
-  Database,
-  Cloud,
-  Settings,
 } from "lucide-react";
 
 const Index = () => {
@@ -154,245 +152,265 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950">
-      <Header />
+    <PageTransition>
+      <div className="min-h-screen bg-white dark:bg-gray-950">
+        <Header />
 
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50 dark:from-blue-950 dark:via-blue-900 dark:to-blue-800"></div>
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDEyOSwgMTQwLCAxNDgsIDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20"></div>
+        {/* Hero Section */}
+        <section className="relative pt-20 pb-16 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50 dark:from-blue-950 dark:via-blue-900 dark:to-blue-800"></div>
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDEyOSwgMTQwLCAxNDgsIDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-20"></div>
 
-        <div className="relative container mx-auto px-4 py-20 text-center">
-          <div className="max-w-5xl mx-auto">
-            <Badge className="mb-6 bg-gradient-ai border-0 text-white px-4 py-2">
-              🚀 Complete Technology Solutions
-            </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
-              COFTECH SERVICES
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Your trusted partner for comprehensive technology solutions. From
-              AI and web development to cybersecurity and cloud services, we
-              deliver innovation that drives your business forward.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button
-                size="lg"
-                className="bg-gradient-ai border-0 text-white px-8 py-6 text-lg"
-              >
-                Explore Our Services
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="px-8 py-6 text-lg">
-                Get Free Consultation
-              </Button>
+          <div className="relative container mx-auto px-4 py-20 text-center">
+            <div className="max-w-5xl mx-auto">
+              <Badge className="mb-6 bg-gradient-ai border-0 text-white px-4 py-2">
+                🚀 Complete Technology Solutions
+              </Badge>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
+                COFTECH SERVICES
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Your trusted partner for comprehensive technology solutions.
+                From AI and web development to cybersecurity and cloud services,
+                we deliver innovation that drives your business forward.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <Link to="/services">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-ai border-0 text-white px-8 py-6 text-lg"
+                  >
+                    Explore Our Services
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="px-8 py-6 text-lg"
+                  >
+                    Get Free Consultation
+                  </Button>
+                </Link>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center">
+                      <stat.icon className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
+                      {stat.number}
+                    </div>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="py-20 bg-white dark:bg-gray-950">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Our <span className="gradient-text">Services</span>
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                Comprehensive technology solutions designed to accelerate your
+                business growth and digital transformation journey.
+              </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center">
-                    <stat.icon className="w-8 h-8 text-white" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+              {services.map((service, index) => (
+                <Card
+                  key={index}
+                  className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden h-full"
+                >
+                  <div
+                    className={`h-2 bg-gradient-to-r ${service.gradient}`}
+                  ></div>
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center mb-4">
+                      <div
+                        className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center mr-4`}
+                      >
+                        <service.icon className="w-6 h-6 text-white" />
+                      </div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
+                    </div>
+                    <CardDescription className="text-base">
+                      {service.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-1 flex flex-col">
+                    <ul className="space-y-2 mb-6 flex-1">
+                      {service.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-center text-sm">
+                          <Check className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                    <Link to="/contact">
+                      <Button className="w-full group-hover:bg-gradient-ai transition-all duration-300">
+                        Contact Us Now!
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="py-20 bg-gray-50 dark:bg-gray-900">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Why Choose <span className="gradient-text">COFTECH</span>
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                We combine technical expertise with business acumen to deliver
+                solutions that drive real results for your organization.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: Zap,
+                  title: "Fast Delivery",
+                  description:
+                    "Rapid development and deployment without compromising quality.",
+                },
+                {
+                  icon: Shield,
+                  title: "Secure Solutions",
+                  description:
+                    "Enterprise-grade security in every solution we deliver.",
+                },
+                {
+                  icon: Users,
+                  title: "Expert Team",
+                  description:
+                    "Experienced professionals across all technology domains.",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "Proven Results",
+                  description:
+                    "Track record of successful projects and satisfied clients.",
+                },
+              ].map((benefit, index) => (
+                <div key={index} className="text-center group">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-gradient-ai rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <benefit.icon className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-600 dark:text-gray-400 text-sm">
-                    {stat.label}
-                  </div>
+                  <h3 className="text-xl font-semibold mb-3">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {benefit.description}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Services Section */}
-      <section className="py-20 bg-white dark:bg-gray-950">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Our <span className="gradient-text">Services</span>
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Comprehensive technology solutions designed to accelerate your
-              business growth and digital transformation journey.
-            </p>
-          </div>
+        {/* Testimonials */}
+        <section className="py-20 bg-white dark:bg-gray-950">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                What Our <span className="gradient-text">Clients Say</span>
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                Don't just take our word for it - hear from businesses that have
+                transformed with COFTECH's comprehensive technology solutions.
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg overflow-hidden h-full"
-              >
-                <div
-                  className={`h-2 bg-gradient-to-r ${service.gradient}`}
-                ></div>
-                <CardHeader className="pb-4">
-                  <div className="flex items-center mb-4">
-                    <div
-                      className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center mr-4`}
-                    >
-                      <service.icon className="w-6 h-6 text-white" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {testimonials.map((testimonial, index) => (
+                <Card key={index} className="border-0 shadow-lg">
+                  <CardContent className="p-6">
+                    <div className="flex mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                        />
+                      ))}
                     </div>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-base">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1 flex flex-col">
-                  <ul className="space-y-2 mb-6 flex-1">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm">
-                        <Check className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link to={service.link}>
-                    <Button className="w-full group-hover:bg-gradient-ai transition-all duration-300">
-                      Learn More
-                      <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Choose <span className="gradient-text">COFTECH</span>
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We combine technical expertise with business acumen to deliver
-              solutions that drive real results for your organization.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                icon: Zap,
-                title: "Fast Delivery",
-                description:
-                  "Rapid development and deployment without compromising quality.",
-              },
-              {
-                icon: Shield,
-                title: "Secure Solutions",
-                description:
-                  "Enterprise-grade security in every solution we deliver.",
-              },
-              {
-                icon: Users,
-                title: "Expert Team",
-                description:
-                  "Experienced professionals across all technology domains.",
-              },
-              {
-                icon: TrendingUp,
-                title: "Proven Results",
-                description:
-                  "Track record of successful projects and satisfied clients.",
-              },
-            ].map((benefit, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-ai rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <benefit.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-white dark:bg-gray-950">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              What Our <span className="gradient-text">Clients Say</span>
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Don't just take our word for it - hear from businesses that have
-              transformed with COFTECH's comprehensive technology solutions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-lg">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-5 h-5 fill-yellow-400 text-yellow-400"
-                      />
-                    ))}
-                  </div>
-                  <blockquote className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                    "{testimonial.content}"
-                  </blockquote>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gradient-ai rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                      {testimonial.name[0]}
-                    </div>
-                    <div>
-                      <div className="font-semibold">{testimonial.name}</div>
-                      <div className="text-gray-500 text-sm">
-                        {testimonial.role} at {testimonial.company}
+                    <blockquote className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                      "{testimonial.content}"
+                    </blockquote>
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-gradient-ai rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                        {testimonial.name[0]}
+                      </div>
+                      <div>
+                        <div className="font-semibold">{testimonial.name}</div>
+                        <div className="text-gray-500 text-sm">
+                          {testimonial.role} at {testimonial.company}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-ai text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Let's discuss how COFTECH can help accelerate your digital
-            transformation with our comprehensive technology solutions.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="px-8 py-6 text-lg">
-              Start Your Project
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-gray-900"
-            >
-              Schedule Consultation
-            </Button>
+        {/* CTA Section */}
+        <section className="py-20 bg-gradient-ai text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Ready to Transform Your Business?
+            </h2>
+            <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+              Let's discuss how COFTECH can help accelerate your digital
+              transformation with our comprehensive technology solutions.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="px-8 py-6 text-lg"
+                >
+                  Start Your Project
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-gray-900"
+                >
+                  Schedule Consultation
+                </Button>
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </PageTransition>
   );
 };
 

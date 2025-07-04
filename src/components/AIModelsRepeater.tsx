@@ -29,19 +29,6 @@ const AIModelsRepeater = () => {
         setLoading(true);
         setError(null);
 
-        // Since the API endpoint might not be available, I'll provide mock data as fallback
-        // You can replace this with the actual API call when the backend is ready
-        const response = await fetch("https://your-backend.com/api/ai-models");
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch AI models");
-        }
-
-        const data = await response.json();
-        setModels(data);
-      } catch (err) {
-        console.warn("API unavailable, using mock data:", err);
-
         // Mock data for demonstration
         const mockModels: AIModel[] = [
           {
@@ -115,10 +102,11 @@ const AIModelsRepeater = () => {
           setModels(mockModels);
           setLoading(false);
         }, 1000);
-        return;
+      } catch (err) {
+        console.error("Error loading AI models:", err);
+        setError("Failed to load AI models");
+        setLoading(false);
       }
-
-      setLoading(false);
     };
 
     fetchAIModels();
