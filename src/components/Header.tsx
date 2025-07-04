@@ -89,9 +89,11 @@ const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-ai rounded-lg flex items-center justify-center">
-            <Bot className="w-5 h-5 text-white" />
-          </div>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F29c0a7297fc14c1d91748176ea31f04a%2F8b1472ec59ff4eca88d17af94001371f?format=webp&width=800"
+            alt="COFTECH"
+            className="w-8 h-8 object-contain"
+          />
           <span className="text-xl font-bold gradient-text">COFTECH</span>
         </Link>
 
