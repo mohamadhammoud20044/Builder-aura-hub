@@ -19,6 +19,7 @@ import WebsiteBuilderAI from "./pages/WebsiteBuilderAI";
 import CustomAI from "./pages/CustomAI";
 import AIAutomation from "./pages/AIAutomation";
 import SignIn from "./pages/SignIn";
+import CompanyInfo from "./pages/CompanyInfo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -67,6 +68,9 @@ const AnimatedRoutes = () => {
 
         {/* Authentication */}
         <Route path="/signin" element={<SignIn />} />
+
+        {/* Company Information */}
+        <Route path="/company-info" element={<CompanyInfo />} />
 
         {/* Other Pages (Placeholders for now) */}
         <Route path="/docs" element={<NotFound />} />
