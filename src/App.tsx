@@ -20,6 +20,7 @@ import CustomAI from "./pages/CustomAI";
 import AIAutomation from "./pages/AIAutomation";
 import SignIn from "./pages/SignIn";
 import CompanyInfo from "./pages/CompanyInfo";
+import PressRelease from "./pages/PressRelease";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
