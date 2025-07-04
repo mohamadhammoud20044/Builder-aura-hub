@@ -150,6 +150,37 @@ const CompanyInfo = () => {
             </h2>
 
             <div className="max-w-6xl mx-auto space-y-8">
+              {/* Khallil Moussa Hammoud */}
+              <Card className="border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                        KMH
+                      </div>
+                      <h3 className="text-xl font-bold">
+                        Khallil Moussa Hammoud
+                      </h3>
+                      <p className="text-primary font-medium">President</p>
+                    </div>
+                    <div className="md:col-span-3">
+                      <h4 className="font-semibold mb-2">About:</h4>
+                      <p className="text-gray-600 dark:text-gray-400 mb-4">
+                        Technical president overseeing COFTECH's development
+                        operations and programming excellence. Expert in
+                        software architecture and team leadership.
+                      </p>
+                      <h4 className="font-semibold mb-2">Expertise:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="secondary">Software Development</Badge>
+                        <Badge variant="secondary">System Architecture</Badge>
+                        <Badge variant="secondary">Team Leadership</Badge>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
               {/* Mohamad Hammoud */}
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
@@ -159,9 +190,7 @@ const CompanyInfo = () => {
                         MH
                       </div>
                       <h3 className="text-xl font-bold">Mohamad Hammoud</h3>
-                      <p className="text-primary font-medium">
-                        CEO & Technician
-                      </p>
+                      <p className="text-primary font-medium">CEO</p>
                     </div>
                     <div className="md:col-span-3">
                       <h4 className="font-semibold mb-2">About:</h4>
@@ -169,10 +198,7 @@ const CompanyInfo = () => {
                         Visionary leader driving COFTECH's technological
                         innovation and strategic direction. Expert in both
                         business leadership and hands-on technical
-                        implementation. Mohamad combines deep technical
-                        knowledge with strategic business acumen to guide
-                        COFTECH's mission of making AI accessible to all
-                        businesses.
+                        implementation.
                       </p>
                       <h4 className="font-semibold mb-2">Expertise:</h4>
                       <div className="flex flex-wrap gap-2">
@@ -181,77 +207,6 @@ const CompanyInfo = () => {
                           Technical Implementation
                         </Badge>
                         <Badge variant="secondary">Business Development</Badge>
-                        <Badge variant="secondary">AI Strategy</Badge>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Komail Zein */}
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-8">
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div className="text-center">
-                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        KZ
-                      </div>
-                      <h3 className="text-xl font-bold">Komail Zein</h3>
-                      <p className="text-primary font-medium">CEO PR</p>
-                    </div>
-                    <div className="md:col-span-3">
-                      <h4 className="font-semibold mb-2">About:</h4>
-                      <p className="text-gray-600 dark:text-gray-400 mb-4">
-                        Public relations expert leading COFTECH's brand presence
-                        and communication strategy. Specialized in building
-                        strong relationships with media and stakeholders. Komail
-                        ensures COFTECH's message reaches the right audiences
-                        and maintains the company's reputation as a trusted AI
-                        solutions provider.
-                      </p>
-                      <h4 className="font-semibold mb-2">Expertise:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary">Public Relations</Badge>
-                        <Badge variant="secondary">Brand Management</Badge>
-                        <Badge variant="secondary">Media Strategy</Badge>
-                        <Badge variant="secondary">Stakeholder Relations</Badge>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Khallil Moussa Hammoud */}
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-8">
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div className="text-center">
-                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        KH
-                      </div>
-                      <h3 className="text-xl font-bold">
-                        Khallil Moussa Hammoud
-                      </h3>
-                      <p className="text-primary font-medium">
-                        President & Programmer
-                      </p>
-                    </div>
-                    <div className="md:col-span-3">
-                      <h4 className="font-semibold mb-2">About:</h4>
-                      <p className="text-gray-600 dark:text-gray-400 mb-4">
-                        Technical president overseeing COFTECH's development
-                        operations and programming excellence. Expert in
-                        software architecture and team leadership. Khallil
-                        ensures all COFTECH solutions are built with the highest
-                        technical standards and scalable architectures that can
-                        grow with client needs.
-                      </p>
-                      <h4 className="font-semibold mb-2">Expertise:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary">Software Development</Badge>
-                        <Badge variant="secondary">System Architecture</Badge>
-                        <Badge variant="secondary">Team Leadership</Badge>
-                        <Badge variant="secondary">Technical Strategy</Badge>
                       </div>
                     </div>
                   </div>
@@ -267,26 +222,78 @@ const CompanyInfo = () => {
                         FS
                       </div>
                       <h3 className="text-xl font-bold">Firas Soufan</h3>
-                      <p className="text-primary font-medium">
-                        CEO PR Marketing
-                      </p>
+                      <p className="text-primary font-medium">CMO</p>
                     </div>
                     <div className="md:col-span-3">
                       <h4 className="font-semibold mb-2">About:</h4>
                       <p className="text-gray-600 dark:text-gray-400 mb-4">
                         Marketing and PR strategist driving COFTECH's market
                         presence and customer engagement. Expert in digital
-                        marketing and brand positioning. Firas develops
-                        comprehensive marketing strategies that effectively
-                        communicate COFTECH's value proposition and drive
-                        customer acquisition and retention.
+                        marketing and brand positioning.
                       </p>
                       <h4 className="font-semibold mb-2">Expertise:</h4>
                       <div className="flex flex-wrap gap-2">
                         <Badge variant="secondary">Digital Marketing</Badge>
                         <Badge variant="secondary">Brand Strategy</Badge>
                         <Badge variant="secondary">Customer Engagement</Badge>
-                        <Badge variant="secondary">Market Analysis</Badge>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Mohamad Ibrahim */}
+              <Card className="border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                        MI
+                      </div>
+                      <h3 className="text-xl font-bold">Mohamad Ibrahim</h3>
+                      <p className="text-primary font-medium">PR</p>
+                    </div>
+                    <div className="md:col-span-3">
+                      <h4 className="font-semibold mb-2">About:</h4>
+                      <p className="text-gray-600 dark:text-gray-400 mb-4">
+                        Public relations expert leading COFTECH's brand presence
+                        and communication strategy. Specialized in building
+                        strong relationships with media and stakeholders.
+                      </p>
+                      <h4 className="font-semibold mb-2">Expertise:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="secondary">Public Relations</Badge>
+                        <Badge variant="secondary">Brand Management</Badge>
+                        <Badge variant="secondary">Media Strategy</Badge>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Eliana */}
+              <Card className="border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div className="text-center">
+                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                        EL
+                      </div>
+                      <h3 className="text-xl font-bold">Eliana</h3>
+                      <p className="text-primary font-medium">PR</p>
+                    </div>
+                    <div className="md:col-span-3">
+                      <h4 className="font-semibold mb-2">About:</h4>
+                      <p className="text-gray-600 dark:text-gray-400 mb-4">
+                        Public relations specialist focused on building
+                        COFTECH's brand awareness and maintaining strong
+                        relationships with clients and media partners.
+                      </p>
+                      <h4 className="font-semibold mb-2">Expertise:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="secondary">Public Relations</Badge>
+                        <Badge variant="secondary">Communications</Badge>
+                        <Badge variant="secondary">Brand Awareness</Badge>
                       </div>
                     </div>
                   </div>
