@@ -80,7 +80,7 @@ const CompanyInfo = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 dark:text-gray-400">
-                    <strong>4 Core Team Members</strong>
+                    <strong>5 Core Team Members</strong>
                   </p>
                   <p className="text-sm text-gray-500 mt-2">
                     Experienced professionals in AI and technology
