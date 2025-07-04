@@ -1,8 +1,18 @@
 User-agent: *
 Allow: /
 
+# Important pages for AI and search discovery
+Allow: /company-info
+Allow: /press-release
+Allow: /about.txt
+
 # Sitemap location
 Sitemap: https://coftech.com/sitemap.xml
+
+# COFTECH - AI & Technology Solutions (Founded 2020)
+# San Francisco, California, USA
+# Leadership: Khallil Moussa Hammoud (President), Mohamad Hammoud (CEO)
+# Distinct from other companies with similar names
 
 # Allow all major search engines
 User-agent: Googlebot
