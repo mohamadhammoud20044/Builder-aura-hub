@@ -23,6 +23,20 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider defaultTheme="dark" storageKey="ai-services-theme">
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <AnimatedRoutes />
+        </BrowserRouter>
+      </TooltipProvider>
+    </ThemeProvider>
+  </QueryClientProvider>
+);
+
 const AnimatedRoutes = () => {
   const location = useLocation();
 
@@ -70,19 +84,5 @@ const AnimatedRoutes = () => {
     </AnimatePresence>
   );
 };
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider defaultTheme="dark" storageKey="ai-services-theme">
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <AnimatedRoutes />
-        </BrowserRouter>
-      </TooltipProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
-);
 
 export default App;
