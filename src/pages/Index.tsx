@@ -348,7 +348,7 @@ const Index = () => {
           </section>
 
           {/* Testimonials */}
-          <section className="py-20 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm">
+          <section className="py-20 bg-white/40 dark:bg-gray-950/40 backdrop-blur-sm">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
