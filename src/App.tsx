@@ -22,6 +22,17 @@ import SignIn from "./pages/SignIn";
 import CompanyInfo from "./pages/CompanyInfo";
 import PressRelease from "./pages/PressRelease";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
+import DataProcessing from "./pages/DataProcessing";
+import Compliance from "./pages/Compliance";
+import Documentation from "./pages/Documentation";
+import APIReference from "./pages/APIReference";
+import Blog from "./pages/Blog";
+import Support from "./pages/Support";
+import HelpCenter from "./pages/HelpCenter";
+import Training from "./pages/Training";
 
 const queryClient = new QueryClient();
 
