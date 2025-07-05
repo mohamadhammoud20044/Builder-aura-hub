@@ -23,7 +23,8 @@ const Team = () => {
     {
       name: "Khallil Moussa Hammoud",
       role: "President",
-      image: "KMH",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2Fe13d27be13d54e1bb57c823464af21bd?format=webp&width=800",
       bio: "Technical president overseeing COFTECH's development operations and programming excellence. Expert in software architecture and team leadership.",
       expertise: [
         "Software Development",
