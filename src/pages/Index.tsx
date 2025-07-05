@@ -162,12 +162,12 @@ const Index = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            filter: "blur(8px)",
-            transform: "scale(1.1)", // Slightly scale to avoid blur edge artifacts
+            filter: "blur(3px)",
+            transform: "scale(1.05)", // Slightly scale to avoid blur edge artifacts
           }}
         />
-        {/* Dark overlay for better text readability */}
-        <div className="fixed inset-0 z-10 bg-black/40 dark:bg-black/60" />
+        {/* Light overlay for better text readability */}
+        <div className="fixed inset-0 z-10 bg-black/20 dark:bg-black/30" />
 
         {/* Main content */}
         <div className="relative z-20 min-h-screen">
