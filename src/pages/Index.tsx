@@ -154,15 +154,16 @@ const Index = () => {
   return (
     <PageTransition>
       <div className="min-h-screen relative">
-        {/* Blurred office background */}
+        {/* Blue tech motherboard background */}
         <div
           className="fixed inset-0 z-0"
           style={{
-            backgroundImage: `url('https://images.pexels.com/photos/32866728/pexels-photo-32866728.jpeg')`,
+            backgroundImage: `url('https://images.pexels.com/photos/3520694/pexels-photo-3520694.jpeg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            filter: "blur(3px)",
+            filter:
+              "blur(3px) hue-rotate(200deg) saturate(1.8) brightness(0.8)",
             transform: "scale(1.05)", // Slightly scale to avoid blur edge artifacts
           }}
         />
