@@ -85,15 +85,20 @@ const AnimatedRoutes = () => {
         <Route path="/company-info" element={<CompanyInfo />} />
         <Route path="/press-release" element={<PressRelease />} />
 
-        {/* Other Pages (Placeholders for now) */}
-        <Route path="/docs" element={<NotFound />} />
-        <Route path="/api" element={<NotFound />} />
-        <Route path="/blog" element={<NotFound />} />
-        <Route path="/support" element={<NotFound />} />
-        <Route path="/careers" element={<NotFound />} />
-        <Route path="/privacy" element={<NotFound />} />
-        <Route path="/terms" element={<NotFound />} />
-        <Route path="/cookies" element={<NotFound />} />
+        {/* Legal Pages */}
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/cookies" element={<CookiePolicy />} />
+        <Route path="/data-processing" element={<DataProcessing />} />
+        <Route path="/compliance" element={<Compliance />} />
+
+        {/* Resources Pages */}
+        <Route path="/docs" element={<Documentation />} />
+        <Route path="/api" element={<APIReference />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/help" element={<HelpCenter />} />
+        <Route path="/training" element={<Training />} />
 
         {/* Catch-all route for 404 */}
         <Route path="*" element={<NotFound />} />
