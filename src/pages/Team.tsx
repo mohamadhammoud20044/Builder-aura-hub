@@ -193,7 +193,16 @@ const Team = () => {
                             src={member.image}
                             alt={member.name}
                             className="w-full h-full object-cover"
-                            style={{ objectPosition: "center 30%" }}
+                            style={{
+                              objectPosition:
+                                member.name === "Khallil Moussa Hammoud"
+                                  ? "center 20%"
+                                  : "center 30%",
+                              transform:
+                                member.name === "Khallil Moussa Hammoud"
+                                  ? "scale(1.2)"
+                                  : "none",
+                            }}
                           />
                         ) : (
                           <span className="text-white text-2xl font-bold">
