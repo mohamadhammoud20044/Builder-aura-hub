@@ -205,7 +205,7 @@ const Team = () => {
                                 member.name === "Khallil Moussa Hammoud"
                                   ? "scale(1.3)"
                                   : member.name === "Mohamad Ibrahim"
-                                    ? "scale(1.2)"
+                                    ? "scale(1.1)"
                                     : "none",
                             }}
                           />
