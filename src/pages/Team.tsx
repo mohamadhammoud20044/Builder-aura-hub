@@ -23,7 +23,8 @@ const Team = () => {
     {
       name: "Khallil Moussa Hammoud",
       role: "President",
-      image: "KMH",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2Fe13d27be13d54e1bb57c823464af21bd?format=webp&width=800",
       bio: "Technical president overseeing COFTECH's development operations and programming excellence. Expert in software architecture and team leadership.",
       expertise: [
         "Software Development",
@@ -54,7 +55,8 @@ const Team = () => {
     {
       name: "Firas Soufan",
       role: "CMO",
-      image: "FS",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2Fe536164bbaec403dbcd11a77f2e98fc0?format=webp&width=800",
       bio: "Marketing and PR strategist driving COFTECH's market presence and customer engagement. Expert in digital marketing and brand positioning.",
       expertise: ["Digital Marketing", "Brand Strategy", "Customer Engagement"],
       social: {
@@ -191,6 +193,16 @@ const Team = () => {
                             src={member.image}
                             alt={member.name}
                             className="w-full h-full object-cover"
+                            style={{
+                              objectPosition:
+                                member.name === "Khallil Moussa Hammoud"
+                                  ? "35% 35%"
+                                  : "center 30%",
+                              transform:
+                                member.name === "Khallil Moussa Hammoud"
+                                  ? "scale(1.3)"
+                                  : "none",
+                            }}
                           />
                         ) : (
                           <span className="text-white text-2xl font-bold">
