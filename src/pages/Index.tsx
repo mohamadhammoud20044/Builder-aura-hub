@@ -154,17 +154,16 @@ const Index = () => {
   return (
     <PageTransition>
       <div className="min-h-screen relative">
-        {/* Blue tech motherboard background */}
+        {/* Neon tech background */}
         <div
           className="fixed inset-0 z-0"
           style={{
-            backgroundImage: `url('https://images.pexels.com/photos/3520694/pexels-photo-3520694.jpeg')`,
+            backgroundImage: `url('https://images.pexels.com/photos/28767589/pexels-photo-28767589.jpeg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            filter:
-              "blur(3px) hue-rotate(200deg) saturate(1.8) brightness(0.8)",
-            transform: "scale(1.05)", // Slightly scale to avoid blur edge artifacts
+            filter: "blur(2px)",
+            transform: "scale(1.05)",
           }}
         />
         {/* Light overlay for better text readability */}
