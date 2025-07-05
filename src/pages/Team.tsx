@@ -38,7 +38,8 @@ const Team = () => {
     {
       name: "Mohamad Hammoud",
       role: "CEO",
-      image: "MH",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2F01d87c113e724c05b299e11cebb47bd8?format=webp&width=800",
       bio: "Visionary leader driving COFTECH's technological innovation and strategic direction. Expert in both business leadership and hands-on technical implementation.",
       expertise: [
         "Strategic Leadership",
