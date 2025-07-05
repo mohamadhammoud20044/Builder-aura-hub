@@ -163,7 +163,6 @@ const Index = () => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             filter: "blur(2px)",
-            transform: "scale(1.05)",
           }}
         />
         {/* Very light overlay for text readability */}
