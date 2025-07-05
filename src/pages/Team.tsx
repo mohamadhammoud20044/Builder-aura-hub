@@ -54,7 +54,8 @@ const Team = () => {
     {
       name: "Firas Soufan",
       role: "CMO",
-      image: "FS",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2Fe536164bbaec403dbcd11a77f2e98fc0?format=webp&width=800",
       bio: "Marketing and PR strategist driving COFTECH's market presence and customer engagement. Expert in digital marketing and brand positioning.",
       expertise: ["Digital Marketing", "Brand Strategy", "Customer Engagement"],
       social: {
