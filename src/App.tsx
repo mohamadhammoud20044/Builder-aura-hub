@@ -50,59 +50,52 @@ const App = () => (
 );
 
 const AnimatedRoutes = () => {
-  const location = useLocation();
-
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Index />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/ai-services" element={<AIServices />} />
-        <Route path="/ai-services/models" element={<AIModels />} />
-        <Route path="/ai-services/about" element={<About />} />
-        <Route path="/ai-services/pricing" element={<Pricing />} />
-        <Route path="/ai-services/contact" element={<AIContact />} />
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/team" element={<Team />} />
+      <Route path="/ai-services" element={<AIServices />} />
+      <Route path="/ai-services/models" element={<AIModels />} />
+      <Route path="/ai-services/about" element={<About />} />
+      <Route path="/ai-services/pricing" element={<Pricing />} />
+      <Route path="/ai-services/contact" element={<AIContact />} />
 
-        {/* Service Pages */}
-        <Route
-          path="/services/conversational-ai"
-          element={<ConversationalAI />}
-        />
-        <Route
-          path="/services/website-builder"
-          element={<WebsiteBuilderAI />}
-        />
-        <Route path="/services/custom-ai" element={<CustomAI />} />
-        <Route path="/services/automation" element={<AIAutomation />} />
+      {/* Service Pages */}
+      <Route
+        path="/services/conversational-ai"
+        element={<ConversationalAI />}
+      />
+      <Route path="/services/website-builder" element={<WebsiteBuilderAI />} />
+      <Route path="/services/custom-ai" element={<CustomAI />} />
+      <Route path="/services/automation" element={<AIAutomation />} />
 
-        {/* Authentication */}
-        <Route path="/signin" element={<SignIn />} />
+      {/* Authentication */}
+      <Route path="/signin" element={<SignIn />} />
 
-        {/* Company Information */}
-        <Route path="/company-info" element={<CompanyInfo />} />
-        <Route path="/press-release" element={<PressRelease />} />
+      {/* Company Information */}
+      <Route path="/company-info" element={<CompanyInfo />} />
+      <Route path="/press-release" element={<PressRelease />} />
 
-        {/* Legal Pages */}
-        <Route path="/privacy" element={<PrivacyPolicy />} />
-        <Route path="/terms" element={<TermsOfService />} />
-        <Route path="/cookies" element={<CookiePolicy />} />
-        <Route path="/data-processing" element={<DataProcessing />} />
-        <Route path="/compliance" element={<Compliance />} />
+      {/* Legal Pages */}
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/terms" element={<TermsOfService />} />
+      <Route path="/cookies" element={<CookiePolicy />} />
+      <Route path="/data-processing" element={<DataProcessing />} />
+      <Route path="/compliance" element={<Compliance />} />
 
-        {/* Resources Pages */}
-        <Route path="/docs" element={<Documentation />} />
-        <Route path="/api" element={<APIReference />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/support" element={<Support />} />
-        <Route path="/help" element={<HelpCenter />} />
-        <Route path="/training" element={<Training />} />
+      {/* Resources Pages */}
+      <Route path="/docs" element={<Documentation />} />
+      <Route path="/api" element={<APIReference />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/support" element={<Support />} />
+      <Route path="/help" element={<HelpCenter />} />
+      <Route path="/training" element={<Training />} />
 
-        {/* Catch-all route for 404 */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </AnimatePresence>
+      {/* Catch-all route for 404 */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 };
 
