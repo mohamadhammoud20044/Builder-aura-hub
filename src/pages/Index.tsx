@@ -159,8 +159,8 @@ const Index = () => {
           className="fixed inset-0 z-0"
           style={{
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F29c0a7297fc14c1d91748176ea31f04a%2Fbc390c59b38546ad83e0802d375fb982?format=webp&width=800')`,
-            backgroundSize: "120% auto",
-            backgroundPosition: "130% center",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             filter: "blur(2px)",
           }}
