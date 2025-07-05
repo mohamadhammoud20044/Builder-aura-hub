@@ -284,13 +284,20 @@ const Header = () => {
                     <ThemeToggle />
                   </div>
                   <Link to="/signin">
-                    <Button variant="outline" className="w-full">
+                    <Button
+                      variant="outline"
+                      className="w-full transition-all duration-200 hover:scale-[1.02] hover:shadow-md"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
                       Sign In
                     </Button>
                   </Link>
                   <Link to="/services">
-                    <Button className="w-full bg-gradient-ai border-0">
-                      Get Started
+                    <Button
+                      className="w-full bg-gradient-ai border-0 transition-all duration-200 hover:scale-[1.02] hover:shadow-lg"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Get Free Consultation
                     </Button>
                   </Link>
                 </div>
