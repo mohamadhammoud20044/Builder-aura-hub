@@ -166,8 +166,8 @@ const Index = () => {
             transform: "scale(1.05)",
           }}
         />
-        {/* Light overlay for better text readability */}
-        <div className="fixed inset-0 z-10 bg-black/20 dark:bg-black/30" />
+        {/* Very light overlay for text readability */}
+        <div className="fixed inset-0 z-10 bg-black/5 dark:bg-black/10" />
 
         {/* Main content */}
         <div className="relative z-20 min-h-screen">
