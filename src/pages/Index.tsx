@@ -153,8 +153,25 @@ const Index = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-screen bg-white dark:bg-gray-950">
-        <Header />
+      <div className="min-h-screen relative">
+        {/* Blurred office background */}
+        <div
+          className="fixed inset-0 z-0"
+          style={{
+            backgroundImage: `url('https://images.pexels.com/photos/32866728/pexels-photo-32866728.jpeg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            filter: 'blur(8px)',
+            transform: 'scale(1.1)', // Slightly scale to avoid blur edge artifacts
+          }}
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="fixed inset-0 z-10 bg-black/40 dark:bg-black/60" />
+
+        {/* Main content */}
+        <div className="relative z-20 min-h-screen">
+          <Header />
 
         {/* Hero Section */}
         <section className="relative pt-20 pb-16 overflow-hidden">
