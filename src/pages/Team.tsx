@@ -191,7 +191,7 @@ const Team = () => {
                           <img
                             src={member.image}
                             alt={member.name}
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-cover"
                           />
                         ) : (
                           <span className="text-white text-2xl font-bold">
