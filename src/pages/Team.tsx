@@ -185,8 +185,18 @@ const Team = () => {
                 >
                   <CardContent className="p-6">
                     <div className="text-center mb-6">
-                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        {member.image}
+                      <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-ai flex items-center justify-center">
+                        {member.image.startsWith("http") ? (
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <span className="text-white text-2xl font-bold">
+                            {member.image}
+                          </span>
+                        )}
                       </div>
                       <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                       <p className="text-primary font-medium">{member.role}</p>
