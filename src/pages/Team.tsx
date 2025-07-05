@@ -198,11 +198,15 @@ const Team = () => {
                               objectPosition:
                                 member.name === "Khallil Moussa Hammoud"
                                   ? "35% 35%"
-                                  : "center 30%",
+                                  : member.name === "Mohamad Ibrahim"
+                                    ? "center 20%"
+                                    : "center 30%",
                               transform:
                                 member.name === "Khallil Moussa Hammoud"
                                   ? "scale(1.3)"
-                                  : "none",
+                                  : member.name === "Mohamad Ibrahim"
+                                    ? "scale(1.4)"
+                                    : "none",
                             }}
                           />
                         ) : (
