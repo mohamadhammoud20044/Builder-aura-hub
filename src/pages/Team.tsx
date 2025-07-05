@@ -67,7 +67,8 @@ const Team = () => {
     {
       name: "Mohamad Ibrahim",
       role: "PR",
-      image: "MI",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F29c0a7297fc14c1d91748176ea31f04a%2F092637a3e11d4e4980d1603bfc6b1fd5?format=webp&width=800",
       bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
       expertise: ["Public Relations", "Brand Management", "Media Strategy"],
       social: {
