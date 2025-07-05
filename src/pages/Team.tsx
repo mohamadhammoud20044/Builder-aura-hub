@@ -23,7 +23,8 @@ const Team = () => {
     {
       name: "Khallil Moussa Hammoud",
       role: "President",
-      image: "KMH",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2Fe13d27be13d54e1bb57c823464af21bd?format=webp&width=800",
       bio: "Technical president overseeing COFTECH's development operations and programming excellence. Expert in software architecture and team leadership.",
       expertise: [
         "Software Development",
@@ -38,7 +39,8 @@ const Team = () => {
     {
       name: "Mohamad Hammoud",
       role: "CEO",
-      image: "MH",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2F01d87c113e724c05b299e11cebb47bd8?format=webp&width=800",
       bio: "Visionary leader driving COFTECH's technological innovation and strategic direction. Expert in both business leadership and hands-on technical implementation.",
       expertise: [
         "Strategic Leadership",
@@ -53,7 +55,8 @@ const Team = () => {
     {
       name: "Firas Soufan",
       role: "CMO",
-      image: "FS",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2Fe536164bbaec403dbcd11a77f2e98fc0?format=webp&width=800",
       bio: "Marketing and PR strategist driving COFTECH's market presence and customer engagement. Expert in digital marketing and brand positioning.",
       expertise: ["Digital Marketing", "Brand Strategy", "Customer Engagement"],
       social: {
@@ -64,7 +67,8 @@ const Team = () => {
     {
       name: "Mohamad Ibrahim",
       role: "PR",
-      image: "MI",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F29c0a7297fc14c1d91748176ea31f04a%2F092637a3e11d4e4980d1603bfc6b1fd5?format=webp&width=800",
       bio: "Public relations expert leading COFTECH's brand presence and communication strategy. Specialized in building strong relationships with media and stakeholders.",
       expertise: ["Public Relations", "Brand Management", "Media Strategy"],
       social: {
@@ -184,8 +188,32 @@ const Team = () => {
                 >
                   <CardContent className="p-6">
                     <div className="text-center mb-6">
-                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        {member.image}
+                      <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-ai flex items-center justify-center">
+                        {member.image.startsWith("http") ? (
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                            style={{
+                              objectPosition:
+                                member.name === "Khallil Moussa Hammoud"
+                                  ? "35% 35%"
+                                  : member.name === "Mohamad Ibrahim"
+                                    ? "center 20%"
+                                    : "center 30%",
+                              transform:
+                                member.name === "Khallil Moussa Hammoud"
+                                  ? "scale(1.3)"
+                                  : member.name === "Mohamad Ibrahim"
+                                    ? "scale(1.1)"
+                                    : "none",
+                            }}
+                          />
+                        ) : (
+                          <span className="text-white text-2xl font-bold">
+                            {member.image}
+                          </span>
+                        )}
                       </div>
                       <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                       <p className="text-primary font-medium">{member.role}</p>

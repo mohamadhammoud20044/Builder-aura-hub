@@ -116,8 +116,8 @@
     scroll-behavior: smooth;
   }
 
-  /* Smooth theme transitions */
-  * {
+  /* Smooth theme transitions - exclude buttons to prevent conflicts */
+  *:not(button):not([role="button"]) {
     transition:
       background-color 0.3s ease-in-out,
       color 0.3s ease-in-out,
@@ -127,7 +127,7 @@
       opacity 0.2s ease-out;
   }
 
-  /* Ensure smooth transitions for all elements during theme changes */
+  /* Ensure smooth transitions for all elements during theme changes - exclude buttons */
   html,
   body,
   div,
@@ -145,8 +145,7 @@
   h6,
   p,
   span,
-  a,
-  button {
+  a {
     transition:
       background-color 0.3s ease-in-out,
       color 0.3s ease-in-out,

@@ -12,11 +12,9 @@ const Footer = () => {
   ];
 
   const company = [
-    { name: "About Us", href: "/about" },
     { name: "Company Info", href: "/company-info" },
     { name: "Pricing", href: "/pricing" },
     { name: "Contact", href: "/contact" },
-    { name: "Careers", href: "/careers" },
   ];
 
   const resources = [
@@ -24,12 +22,16 @@ const Footer = () => {
     { name: "API Reference", href: "/api" },
     { name: "Blog", href: "/blog" },
     { name: "Support", href: "/support" },
+    { name: "Help Center", href: "/help" },
+    { name: "Training", href: "/training" },
   ];
 
   const legal = [
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
     { name: "Cookie Policy", href: "/cookies" },
+    { name: "Data Processing", href: "/data-processing" },
+    { name: "Compliance", href: "/compliance" },
   ];
 
   return (
