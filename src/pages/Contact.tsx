@@ -53,20 +53,20 @@ const Contact = () => {
                       {
                         icon: Mail,
                         title: "Email",
-                        info: "hello@coftech.com",
+                        info: "coftech.net@gmail.com",
                         subtext: "We respond within 24 hours",
                       },
                       {
                         icon: Phone,
                         title: "Phone",
-                        info: "+1 (555) 123-4567",
+                        info: "+961 76 847 101",
                         subtext: "Mon-Fri, 9am-6pm EST",
                       },
                       {
                         icon: MapPin,
                         title: "Office",
-                        info: "123 Tech Street, Innovation District",
-                        subtext: "San Francisco, CA 94102",
+                        info: "Lebanon Beirut al Hamra Bliss street",
+                        subtext: "Beirut, Lebanon",
                       },
                       {
                         icon: MessageSquare,

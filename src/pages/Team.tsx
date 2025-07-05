@@ -38,7 +38,8 @@ const Team = () => {
     {
       name: "Mohamad Hammoud",
       role: "CEO",
-      image: "MH",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2Fbffb9bcde1da4ed6b32ed00b40cc3b47%2F01d87c113e724c05b299e11cebb47bd8?format=webp&width=800",
       bio: "Visionary leader driving COFTECH's technological innovation and strategic direction. Expert in both business leadership and hands-on technical implementation.",
       expertise: [
         "Strategic Leadership",
@@ -184,8 +185,18 @@ const Team = () => {
                 >
                   <CardContent className="p-6">
                     <div className="text-center mb-6">
-                      <div className="w-24 h-24 mx-auto mb-4 bg-gradient-ai rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        {member.image}
+                      <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-ai flex items-center justify-center">
+                        {member.image.startsWith("http") ? (
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <span className="text-white text-2xl font-bold">
+                            {member.image}
+                          </span>
+                        )}
                       </div>
                       <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                       <p className="text-primary font-medium">{member.role}</p>
