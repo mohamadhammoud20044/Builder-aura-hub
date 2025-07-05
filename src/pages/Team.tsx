@@ -196,7 +196,7 @@ const Team = () => {
                             style={{
                               objectPosition:
                                 member.name === "Khallil Moussa Hammoud"
-                                  ? "center 20%"
+                                  ? "40% 35%"
                                   : "center 30%",
                               transform:
                                 member.name === "Khallil Moussa Hammoud"
