@@ -170,16 +170,23 @@ const Header = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden lg:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-3">
           <ThemeToggle />
           <Link to="/signin">
-            <Button variant="outline" size="sm">
+            <Button
+              variant="outline"
+              size="sm"
+              className="transition-all duration-200 hover:scale-105 hover:shadow-md"
+            >
               Sign In
             </Button>
           </Link>
           <Link to="/services">
-            <Button size="sm" className="bg-gradient-ai border-0">
-              Get Started
+            <Button
+              size="sm"
+              className="bg-gradient-ai border-0 transition-all duration-200 hover:scale-105 hover:shadow-lg"
+            >
+              Get Free Consultation
             </Button>
           </Link>
         </div>
