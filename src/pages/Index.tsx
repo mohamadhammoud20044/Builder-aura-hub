@@ -175,7 +175,7 @@ const Index = () => {
 
           {/* Hero Section */}
           <section className="relative pt-20 pb-16 overflow-hidden">
-            <div className="absolute inset-0 bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm"></div>
+            <div className="absolute inset-0 bg-white/30 dark:bg-gray-950/30 backdrop-blur-sm"></div>
 
             <div className="relative container mx-auto px-4 py-20 text-center">
               <div className="max-w-5xl mx-auto">
