@@ -191,7 +191,8 @@ const Team = () => {
                           <img
                             src={member.image}
                             alt={member.name}
-                            className="w-full h-full object-cover object-center"
+                            className="w-full h-full object-cover"
+                            style={{ objectPosition: "center 30%" }}
                           />
                         ) : (
                           <span className="text-white text-2xl font-bold">
